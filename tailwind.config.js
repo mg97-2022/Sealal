@@ -15,8 +15,10 @@ module.exports = {
         secondaryLight: "#F2F5F8",
         secondaryVeryLight: "#fffbed",
         secondaryOverlay: "#FED700", // there is problem with this color
+        secondaryDark: "#F0B846",
         greyLightFirst: "#F6F3F4",
         greyLightSecond: "#9B9B9B",
+        greyLightThird: "#F9F9F9",
         greyDark: "#333E48",
       },
       // fontSize: {
