@@ -13,7 +13,6 @@ const BannerWithText = ({
   greyBackground,
   reverse,
   verticalPadding,
-  contentClassName,
 }) => {
   return (
     <section
