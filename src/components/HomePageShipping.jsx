@@ -11,7 +11,7 @@ const HomePageShipping = () => {
 
   return (
     <section className="container pb-6">
-      <SectionHeader heading="Find out about shipping rates" showSideLines />
+      <SectionHeader heading="shippingRates" showSideLines />
       <div className="flex items-center justify-center gap-16 px-44">
         <ShippingCard
           icon={<ShippingCarIcon />}
