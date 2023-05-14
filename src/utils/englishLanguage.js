@@ -73,10 +73,49 @@ export const en = {
   contact: "contact",
   fastShipping: "Fast shipping",
   lastMile: "last mile delivery",
-  doorToDoor: "Door-to-Door Singapore Courier Service Safely, Reliably, Conveniently",
+  doorToDoor:
+    "Door-to-Door Singapore Courier Service Safely, Reliably, Conveniently",
   deliveryPartner: "Top SINGAPORE ECOMMERCE DELIVERY PARTNER",
-  
-
+  // home page
+  shippingRates: "Find out about shipping rates",
+  // footer subscribe
+  yourEmail: "Your email",
+  // join page
+  joinOurPudo: "JOIN OUR PUDO NETWORK",
+  bePartOfPudo:
+    "Be part of our growing network of PUDO points and reap from the benefits!",
+  submit: "submit",
+  whatIsPudo: "WHAT IS A PUDO POINT?",
+  step1: "step 1",
+  orderPlaced: "order placed",
+  pudoPoints1:
+    "Consumer purchased an item online through Shopee, Lazada, Zalora or others.",
+  step2: "step 2",
+  orderDelivered: "order delivered",
+  pudoPoints2:
+    "Consumer purchased an item online through Shopee, Lazada, Zalora or others.",
+  step3: "step 3",
+  parcelCollected: "parcel collected",
+  pudoPoints3:
+    "Consumer purchased an item online through Shopee, Lazada, Zalora or others.",
+  step4: "step 4",
+  commissionRewarded: "commission rewarded",
+  pudoPoints4:
+    "Consumer purchased an item online through Shopee, Lazada, Zalora or others.",
+  pudoBenefits: "BENEFITS OF Sealal PUDO DROP POINT",
+  additionalTraffic: "ADDITIONAL FOOT TRAFFIC",
+  pudoBenefits1:
+    "Enjoy increased customer traffic to your store when you allow J&T drop off. eCommerce is booming, expect new and returning patrons to your store.",
+  additionalRevenue: "ADDITIONAL REVENUE STREAM",
+  pudoBenefits2:
+    "Enjoy increased customer traffic to your store when you allow J&T drop off. eCommerce is booming, expect new and returning patrons to your store.",
+  storePudo: "CAN MY STORE BE A PUDO POINT?",
+  pudoRequirements: "WHAT ARE THE REQUIREMENTS?",
+  pudoRequirementsDescription: [
+    "bulletpoint-Red-Tick Your shop can be located easily.",
+    "bulletpoint-Red-Tick Your shop is open to include J&T Express branding.",
+    "bulletpoint-Red-Tick You are willing to allocate space for J&T Express parcel drop-off.",
+  ],
 
   login: "login",
   signup: "Signup",
