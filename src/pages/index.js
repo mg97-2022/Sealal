@@ -1,72 +1,76 @@
+import MainBannerWithText from "../components/MainBannerWithText";
 import HomePageShipping from "../components/HomePageShipping";
 import BannerWithText from "../components/BannerWithText";
-import HomePageBanner from "../components/HomePageBanner";
 import DeliveryPartner from "../components/DeliveryPartner";
 import WhyUs from "../components/WhyUs";
 import CustomersReviews from "../components/CustomersReviews";
-import CustomCarousel from "../components/CustomCarousel";
-import LangUtils from "../utils/language"
-
-// import { Inter } from "next/font/google";
-// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main>
-      <HomePageBanner />
+      <MainBannerWithText
+        extraHeading="fastShipping"
+        heading="lastMile"
+        description="doorToDoor"
+        bannerSrc="/home-banner.png"
+        bannerWidth={900}
+        bannerHeight={700}
+        buttonText="contactUs"
+        onClick={() => {}}
+      />
       <DeliveryPartner />
       <WhyUs />
       <HomePageShipping />
       <BannerWithText
-        title={LangUtils.FetchWord("home1Title")}
+        title={"home1Title"}
         imgSrc="/home1.png"
         imgHeight={374}
         imgWidth={610}
-        descriptions={LangUtils.FetchWord("home1Descriptions")}
+        descriptions={"home1Descriptions"}
         verticalPadding="py-[60px]"
       />
       <BannerWithText
-        title={LangUtils.FetchWord("home2Title")}
+        title={"home2Title"}
         imgSrc="/home2.png"
         imgHeight={334}
         imgWidth={366}
-        descriptions={LangUtils.FetchWord("home2Descriptions")}
+        descriptions={"home2Descriptions"}
         showDescriptionIcon
         reverse
         greyBackground
         verticalPadding="py-6"
       />
       <BannerWithText
-        title={LangUtils.FetchWord("home3Title")}
+        title={"home3Title"}
         imgSrc="/home3.png"
         imgHeight={400}
         imgWidth={433}
-        descriptions={LangUtils.FetchWord("home3Descriptions")}
+        descriptions={"home3Descriptions"}
         showDescriptionIcon
         verticalPadding="py-11"
       />
       <BannerWithText
-        title={LangUtils.FetchWord("home4Title")}
+        title={"home4Title"}
         imgSrc="/home4.png"
         imgHeight={383}
         imgWidth={561}
-        descriptions={LangUtils.FetchWord("home4Descriptions")}
+        descriptions={"home4Descriptions"}
         reverse
         greyBackground
       />
       <BannerWithText
-        title={LangUtils.FetchWord("home5Title")}
+        title={"home5Title"}
         imgSrc="/home5.png"
         imgHeight={372}
         imgWidth={510}
-        descriptions={LangUtils.FetchWord("home5Descriptions")}
+        descriptions={"home5Descriptions"}
       />
       <BannerWithText
-        title={LangUtils.FetchWord("home6Title")}
+        title={"home6Title"}
         imgSrc="/home6.png"
         imgHeight={377}
         imgWidth={566}
-        descriptions={LangUtils.FetchWord("home6Descriptions")}
+        descriptions={"home6Descriptions"}
         reverse
         greyBackground
       />
