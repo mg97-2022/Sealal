@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ShareIcon from "./icons/ShareIcon";
+import LangUtils from "../utils/language";
 
 const BannerWithText = ({
   title,
@@ -25,14 +26,17 @@ const BannerWithText = ({
           reverse && "flex-row-reverse"
         } container flex items-center justify-between gap-20`}
       >
-        <div  className="max-w-[675px]">
+        <div className="max-w-[675px]">
           <h3
             className={`${titleClassName} text-[22px] font-medium text-primary leading-[36px] uppercase mb-6`}
           >
-            {title}
+            {LangUtils.FetchWord(title)}
           </h3>
-          {descriptions.map((description) => (
-            <p key={description} className={`flex items-start mb-4 leading-[24px]`}>
+          {LangUtils.FetchWord(descriptions).map((description) => (
+            <p
+              key={description}
+              className={`flex items-start mb-4 leading-[24px]`}
+            >
               {showDescriptionIcon && <ShareIcon className="min-w-max" />}
               {description}
             </p>
@@ -40,7 +44,7 @@ const BannerWithText = ({
         </div>
         <Image
           src={imgSrc}
-          alt={title}
+          alt={LangUtils.FetchWord(title)}
           width={imgWidth}
           height={imgHeight}
         />
