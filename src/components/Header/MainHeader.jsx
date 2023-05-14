@@ -9,23 +9,53 @@ const MainHeader = () => {
       <div className="container h-20 flex justify-between items-center">
         <div className="flex justify-start items-center gap-24">
           <Link href="/">
-            <Image src="/logo.png" alt="Logo" width={100} height={20} />
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={158}
+              height={80}
+            />
           </Link>
           <ul className="flex justify-start gap-10 text-primaryLight font-medium">
             <li>
-              <Link className="capitalize text-primaryLight text-sm font-medium" href="/">{LangUtils.FetchWord("home")}</Link>
+              <Link
+                className="capitalize text-primaryLight text-sm font-medium"
+                href="/"
+              >
+                {LangUtils.FetchWord("home")}
+              </Link>
             </li>
             <li>
-              <Link className="capitalize text-primaryLight text-sm font-medium" href="/">{LangUtils.FetchWord("aboutUs")}</Link>
+              <Link
+                className="capitalize text-primaryLight text-sm font-medium"
+                href="/"
+              >
+                {LangUtils.FetchWord("aboutUs")}
+              </Link>
             </li>
             <li>
-              <Link className="capitalize text-primaryLight text-sm font-medium" href="/">{LangUtils.FetchWord("pudoSignup")}</Link>
+              <Link
+                className="capitalize text-primaryLight text-sm font-medium"
+                href="/join"
+              >
+                {LangUtils.FetchWord("pudoSignup")}
+              </Link>
             </li>
             <li>
-              <Link className="capitalize text-primaryLight text-sm font-medium" href="/">{LangUtils.FetchWord("blog")}</Link>
+              <Link
+                className="capitalize text-primaryLight text-sm font-medium"
+                href="/"
+              >
+                {LangUtils.FetchWord("blog")}
+              </Link>
             </li>
             <li>
-              <Link className="capitalize text-primaryLight text-sm font-medium" href="/">{LangUtils.FetchWord("contactUs")}</Link>
+              <Link
+                className="capitalize text-primaryLight text-sm font-medium"
+                href="/"
+              >
+                {LangUtils.FetchWord("contactUs")}
+              </Link>
             </li>
           </ul>
         </div>
@@ -36,7 +66,7 @@ const MainHeader = () => {
           <div className="flex flex-col">
             <div>
               <span className="font-semibold">
-                {LangUtils.FetchWord("support")} 
+                {LangUtils.FetchWord("support")}
               </span>
               <span className="font-medium"> (+000) 12345678912</span>
             </div>
