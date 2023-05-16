@@ -116,7 +116,12 @@ export const en = {
     "bulletpoint-Red-Tick Your shop is open to include J&T Express branding.",
     "bulletpoint-Red-Tick You are willing to allocate space for J&T Express parcel drop-off.",
   ],
+  // Home page
+  submit: "submit",
 
+
+
+  // old translation
   login: "login",
   signup: "Signup",
   forgot_password: "Forget Password",
