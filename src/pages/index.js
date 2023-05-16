@@ -2,8 +2,8 @@ import MainBannerWithText from "../components/MainBannerWithText";
 import HomePageShipping from "../components/HomePageShipping";
 import BannerWithText from "../components/BannerWithText";
 import DeliveryPartner from "../components/DeliveryPartner";
-import WhyUs from "../components/WhyUs";
-import CustomersReviews from "../components/CustomersReviews";
+import WhyUs from "@/components/WhyUs";
+import CustomersReviews from "@/components/CustomersReviews";
 
 export default function Home() {
   return (
