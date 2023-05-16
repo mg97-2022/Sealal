@@ -5,9 +5,9 @@ const Button = ({ button, onClick, className, type, buttonColor }) => {
     <button
       type={type || "button"}
       onClick={onClick}
-      className={`${className} ${
+      className={`${
         buttonColor ? buttonColor : "bg-primary"
-      } px-20 py-3 rounded-full text-white font-medium leading-[36px]`}
+      } px-20 py-3 rounded-full text-white font-medium leading-[36px] cursor-pointer ${className} `}
     >
       {LangUtils.FetchWord(button)}
     </button>

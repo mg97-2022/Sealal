@@ -1,10 +1,10 @@
 import Button from "./Button";
 import LangUtils from "../utils/language";
 
-const ShippingCard = ({ icon, title, description, onClick }) => {
+const ShippingCard = ({ icon, title, description, onClick, className }) => {
   return (
     <div
-      className="text-center px-8 py-10 rounded-[15px] box-shadow"
+      className={`text-center px-8 py-10 rounded-[15px] box-shadow flex-1 ${className}`}
     >
       <span className="flex items-center justify-center mx-auto bg-greyLightFirst w-[100px] h-[100px] rounded-full mb-5">
         {icon}
