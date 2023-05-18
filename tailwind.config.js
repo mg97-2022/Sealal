@@ -20,7 +20,10 @@ module.exports = {
         greyLightSecond: "#9B9B9B",
         greyLightThird: "#F9F9F9",
         greyLightFourth: "#B4B4B4",
+        greyLightFifth: "#C7C7C7",
         greyDark: "#333E48",
+        greySemiDark: "#676767",
+        greySemiDarkSecond: "#646464",
         greyDarkSecondary: "rgba(0, 0, 0, 0.1)",
       },
       // fontSize: {
