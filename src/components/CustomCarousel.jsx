@@ -10,13 +10,14 @@ const CustomCarousel = ({
   containerClassName,
   slidesToShow,
   responsive,
+  pagination = true,
 }) => {
   const settings = {
     arrows: true, // used to show navigation arrows
     accessibility: true, // used to enable scroll
     nextArrow: <ArrowIcon reverse />, // next navigation arrow
     prevArrow: <ArrowIcon />, // previous navigation arrow
-    dots: true, // used to show pagination arrows
+    dots: pagination, // used to show pagination arrows
     // dotsClass: "",
     // appendDots: dots => <ul>{dots}</ul>, // used to show custom pagination (like customPaging)
     // customPaging: (i) => {} // used to show custom pagination ({i + 1} is the current)
@@ -50,7 +51,6 @@ const CustomCarousel = ({
 };
 
 export default CustomCarousel;
-
 
 // appendDots: dots => (
 //   <div

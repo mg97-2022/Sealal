@@ -1,15 +1,14 @@
-const InputField = ({
+const TextArea = ({
   containerClassName,
   label,
   name,
-  type,
   placeholder,
+  cols,
+  rows,
   register,
   required = true,
-  otherValidations,
   errorMessage,
-  inputClassName,
-  input,
+  textAreaClassName,
 }) => {
   return (
     <div
@@ -24,21 +23,20 @@ const InputField = ({
         {label}
         {!!errorMessage && <span>{errorMessage}</span>}
       </label>
-      <input
-        className={`bg-transparent rounded-2 rounded-[10px] border border-black outline-none h-10 px-2 text-xs placeholder:text-greyLightFourth ${inputClassName} ${
+      <textarea
+        className={`resize-none rounded-2 rounded-[10px] border bg-white border-greyLightFifth outline-none py-2 px-2 text-xs placeholder:text-greyLightFourth ${textAreaClassName} ${
           !!errorMessage && "border-red-500"
         }`}
         id={name}
-        type={type || "text"}
         {...register(name, {
           required: required && ` is required *`,
-          ...otherValidations,
         })}
         placeholder={placeholder || label}
-        {...input}
+        cols={cols || "30"}
+        rows={rows || "10"}
       />
     </div>
   );
 };
 
-export default InputField;
+export default TextArea;

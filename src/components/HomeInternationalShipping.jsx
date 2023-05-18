@@ -136,8 +136,8 @@ const HomeInternationalShipping = () => {
           type="submit"
           button="submit"
           buttonColor="bg-secondary"
-          className="px-12 py-1"
-        />
+          className="px-24 py-1"
+          />
       </div>
     </form>
   );

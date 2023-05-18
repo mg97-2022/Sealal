@@ -1,4 +1,5 @@
 import BannerWithText from "@/components/BannerWithText";
+import LetsChatForm from "@/components/LetsChatForm";
 import MainBannerWithText from "@/components/MainBannerWithText";
 import PudoBenefits from "@/components/PudoBenefits";
 import PudoPoints from "@/components/PudoPoints";
@@ -18,6 +19,7 @@ const join = () => {
         bannerHeight={600}
         buttonText="submit"
         buttonColor="bg-secondaryDark"
+        backgroundColor="bg-[#fef9f0]"
         onClick={() => {}}
       />
       <PudoPoints />
@@ -32,6 +34,7 @@ const join = () => {
         showDescriptionIcon
         verticalPadding="py-16"
       />
+      <LetsChatForm />
     </main>
   );
 };

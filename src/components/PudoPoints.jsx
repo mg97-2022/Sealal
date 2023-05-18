@@ -1,4 +1,4 @@
-import PudoPointsCard from "./PudoPointsCard";
+import CustomCard from "./CustomCard";
 import SectionHeader from "./SectionHeader";
 
 const pudoPoints = [
@@ -8,6 +8,8 @@ const pudoPoints = [
     step: "step1",
     title: "orderPlaced",
     description: "pudoPoints1",
+    imgWidth: 294,
+    imgHeight: 294,
   },
   {
     id: 2,
@@ -15,6 +17,8 @@ const pudoPoints = [
     step: "step2",
     title: "orderDelivered",
     description: "pudoPoints2",
+    imgWidth: 294,
+    imgHeight: 294,
   },
   {
     id: 3,
@@ -22,6 +26,8 @@ const pudoPoints = [
     step: "step3",
     title: "parcelCollected",
     description: "pudoPoints3",
+    imgWidth: 294,
+    imgHeight: 294,
   },
   {
     id: 4,
@@ -29,6 +35,8 @@ const pudoPoints = [
     step: "step4",
     title: "commissionRewarded",
     description: "pudoPoints4",
+    imgWidth: 294,
+    imgHeight: 294,
   },
 ];
 
@@ -38,7 +46,7 @@ const PudoPoints = () => {
       <SectionHeader heading="whatIsPudo" />
       <div className="flex items-center gap-4 pt-12">
         {pudoPoints.map((point) => (
-          <PudoPointsCard key={point.id} {...point} />
+          <CustomCard key={point.id} {...point} />
         ))}
       </div>
     </section>
@@ -46,10 +54,3 @@ const PudoPoints = () => {
 };
 
 export default PudoPoints;
-
-// whatIsPudo: "WHAT IS A PUDO POINT?",
-// step1: "step 1",
-// orderPlaced: "order placed",
-// pudoPoints1:
-
-// PudoPointsCard
