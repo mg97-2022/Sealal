@@ -116,8 +116,49 @@ export const en = {
     "bulletpoint-Red-Tick Your shop is open to include J&T Express branding.",
     "bulletpoint-Red-Tick You are willing to allocate space for J&T Express parcel drop-off.",
   ],
+  letsChat: "let's chat",
+  whoDoYouNeed: "who do you need to get in touch with?",
+  messagePurpose: "purpose of message",
+  firstName: "first name",
+  contactNumber: "contact number",
+  email: "email",
+  subject: "subject",
+  description: "description",
+  iAgreeToReceive:
+    "i agree to receive communications from sealal Express Singapore",
+  youCanUnsubscribe:
+    "You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our Privacy Policy.",
+  byClicking:
+    "By clicking submit below, you consent to allow sealal Express Singapore to store and process the personal information submitted above to provide you the content requested.",
+
   // Home page
   submit: "submit",
+  // services page
+  services: "services",
+  bePartOfGrowing:
+    "Be part of our growing network of PUDO points and reap from the benefits!",
+  workTogether: "LET'S WORK TOGETHER",
+  modularYet:
+    "Modular yet extremely powerful as one. Built for eCommerce. And beyond.",
+  lastMile: "last mile delivery",
+  workTogetherCartDesc1:
+    "Get your packages to customers’ doorsteps, however fast you want. Our huge fleet of delivery vehicles geared up with an automated sorting machine - capable of dealing with 100,000 parcels a day 24/7 - is at your disposal.",
+  internationalDelivery: "international delivery",
+  workTogetherCartDesc2:
+    "Get your packages to customers’ doorsteps, however fast you want. Our huge fleet of delivery vehicles geared up with an automated sorting machine - capable of dealing with 100,000 parcels a day 24/7 - is at your disposal.",
+  fulfill: "fulfillment & warehousing",
+  workTogetherCartDesc3:
+    "Get your packages to customers’ doorsteps, however fast you want. Our huge fleet of delivery vehicles geared up with an automated sorting machine - capable of dealing with 100,000 parcels a day 24/7 - is at your disposal.",
+  ourIntegrated: "our integrated partners",
+  keenToKnow: "keen to know more?",
+  aBetterWay: "a better way to grow a single click",
+  // contact us page
+  phoneNumber: "phone number",
+  emailAddress: "e-mail address",
+  lorem: "Lorem Ipsum is simply dummy text of the printing",
+
+
+
 
 
 
