@@ -8,6 +8,7 @@ const WhyUs = () => {
     <section className="bg-secondaryVeryLight">
       <div className="container flex items-center justify-between">
         <Image
+          className="h-[376px]"
           src="/delivery-car.png"
           alt="delivery car"
           width={794}
@@ -31,7 +32,9 @@ const WhyUs = () => {
               {LangUtils.FetchWord("seamless")}
             </span>
           </div>
-          <span className="block  text-greyDark text-lg my-6">{LangUtils.FetchWord("keenTo")}</span>
+          <span className="block  text-greyDark text-lg my-6">
+            {LangUtils.FetchWord("keenTo")}
+          </span>
           <Button button="contactUs" onClick={() => {}} />
         </div>
       </div>

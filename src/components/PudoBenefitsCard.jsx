@@ -1,11 +1,17 @@
 import Image from "next/image";
 import LangUtils from "../utils/language";
 
-const PudoBenefitsCard = ({ imgSrc, title, description, imgWidth, imgHeight }) => {
+const PudoBenefitsCard = ({
+  imgSrc,
+  title,
+  description,
+  imgWidth,
+  imgHeight,
+}) => {
   return (
     <div className="bg-greyLightThird rounded-[20px] p-14 text-center w-[100%]">
       <Image
-        className="mx-auto"
+        className={`mx-auto h-[${imgHeight}px]`}
         src={imgSrc}
         alt={LangUtils.FetchWord(title)}
         width={imgWidth}

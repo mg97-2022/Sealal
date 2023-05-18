@@ -16,11 +16,11 @@ const ReviewsCard = ({ img, rating, name, review }) => {
     <div className="py-5 pl-5 pr-3 bg-greyLightFirst rounded-lg w-[250px] lg:w-[300px] xl:w-[390px] min-h-[245px] mx-auto">
       <div className="flex gap-2 items-center mb-4">
         <Image
-          className="rounded-full w-[50px] lg:w-[60px] xl:w-[72px]"
+          className="rounded-full w-[50px] lg:w-[60px] xl:w-[72px] h-[72px]"
           src={img}
           alt={name}
-          width="72"
-          height="72"
+          width={72}
+          height={72}
         />
         <div className="flex flex-col gap-2">
           <h4 className="text-base lg:text-lg font-semibold">{name}</h4>

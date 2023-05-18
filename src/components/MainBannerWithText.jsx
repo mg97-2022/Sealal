@@ -17,19 +17,14 @@ const MainBannerWithText = ({
   buttonText,
   buttonColor,
   onClick,
-  overlayColor,
-  overlayWidth,
-  overlayHeight,
+  backgroundColor
 }) => {
   return (
     <section
-      className={`relative ${sectionHeight ? sectionHeight : "h-[100vh]"}`}
+      className={`relative ${backgroundColor} ${
+        sectionHeight ? sectionHeight : "h-[100vh]"
+      }`}
     >
-      {/* <Overlay
-        width={overlayWidth}
-        height={overlayHeight}
-        overlayColor={overlayColor}
-      /> */}
       <div
         className={`container relative ${
           contentTop ? contentTop : "top-[200px]"
@@ -59,6 +54,7 @@ const MainBannerWithText = ({
             />
           </div>
           <Image
+            className={`h-[${bannerHeight}px]`}
             src={bannerSrc}
             alt="banner"
             width={bannerWidth}

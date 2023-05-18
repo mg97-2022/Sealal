@@ -33,7 +33,13 @@ const DeliveryPartner = () => {
           "/image 10.png",
         ].map((img, index) => (
           <div key={index} className="flex items-center justify-center">
-            <Image className="mx-auto" src={img} alt="img" width="80" height="80" />
+            <Image
+              className="mx-auto h-[80px]"
+              src={img}
+              alt="img"
+              width="80"
+              height="80"
+            />
           </div>
         ))}
       </CustomCarousel>

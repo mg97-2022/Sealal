@@ -42,6 +42,7 @@ const BannerWithText = ({
           ))}
         </div>
         <Image
+          className={`h-[${imgHeight}px]`}
           src={imgSrc}
           alt={LangUtils.FetchWord(title)}
           width={imgWidth}

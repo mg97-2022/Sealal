@@ -10,6 +10,7 @@ const MainHeader = () => {
         <div className="flex justify-start items-center gap-24">
           <Link href="/">
             <Image
+              className="h-[80px]"
               src="/logo.png"
               alt="Logo"
               width={158}
