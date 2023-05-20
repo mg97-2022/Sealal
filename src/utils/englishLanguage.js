@@ -196,6 +196,23 @@ export const en = {
   enterOTP: "Enter OTP sent to you",
   verifyCode: "verify code",
   resendCode: "resend code",
+  // track shipment
+  shipmentReceived: "shipment received",
+  onTheWay: "on the way",
+  delivered: "delivered",
+  unableToDeliver: "unable to deliver",
+  orderDate: "order date",
+  orderSummary: "order summary",
+  buyer: "buyer",
+  amountTotal: "amount total",
+  unableReason:
+    "Unable to deliver, stating the reason for this and choosing a solution",
+  redeliveryToSame: "Re-delivery to the same customer",
+  redeliverToAnother: "Re-delivery to another customer",
+  refundToSeller: "refund to seller",
+  receiptInWarehouse: "receipt in warehouse",
+  sendToSeller: "send to seller's address",
+  orderCongratulations: "Congratulations, your order done!",
 
   // old translation
   login: "login",

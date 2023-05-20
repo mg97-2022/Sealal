@@ -16,6 +16,7 @@ module.exports = {
         secondaryVeryLight: "#fffbed",
         secondaryOverlay: "#FED700", // there is problem with this color
         secondaryDark: "#F0B846",
+        greyColor: "#C9C9C9",
         greyLightFirst: "#F6F3F4",
         greyLightSecond: "#9B9B9B",
         greyLightThird: "#F9F9F9",
@@ -26,11 +27,8 @@ module.exports = {
         greySemiDarkSecond: "#646464",
         greyDarkSecondary: "rgba(0, 0, 0, 0.1)",
         lightPink: "#F6F3FF",
+        redColor: "#D22B06",
       },
-      // fontSize: {
-      //   "15px": "15px",
-      // },
     },
   },
-  // plugins: [],
 };
