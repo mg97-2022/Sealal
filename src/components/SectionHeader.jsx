@@ -18,7 +18,7 @@ const SectionHeader = ({
         {showSideLines && <span className="h-[1px] w-[150px] bg-primary" />}
       </div>
       {description && (
-        <p className="mx-auto max-w-[350px] mt-2 first-letter-capitalize">
+        <p className="mx-auto max-w-[350px] mt-2 first-letter:capitalize">
           {LangUtils.FetchWord(description)}
         </p>
       )}

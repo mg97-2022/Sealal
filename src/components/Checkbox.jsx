@@ -16,7 +16,7 @@ const Checkbox = ({
         {...input}
       />
       <label
-        className={"first-letter-capitalize text-lg text-greyDark"}
+        className={"first-letter:capitalize text-lg text-greyDark"}
         htmlFor={name}
       >
         {label}

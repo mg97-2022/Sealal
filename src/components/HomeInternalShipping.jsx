@@ -103,7 +103,7 @@ const HomeInternalShipping = () => {
           errorMessage={errors.specialMarque?.message}
         />
       </HomeFormInputsContainer>
-      <span className="block first-letter-capitalize font-medium mt-3 pl-[14px]">
+      <span className="block first-letter:capitalize font-medium mt-3 pl-[14px]">
         receiver info
       </span>
       <HomeFormInputsContainer>
@@ -146,7 +146,7 @@ const HomeInternalShipping = () => {
           button="submit"
           buttonColor="bg-secondary"
           className="px-24 py-1"
-          />
+        />
       </div>
     </form>
   );

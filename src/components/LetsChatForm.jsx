@@ -87,7 +87,7 @@ const LetsChatForm = () => {
           <div className="mt-6 pl-10">
             {["youCanUnsubscribe", "byClicking"].map((paragraph, index) => (
               <p
-                className={`text-greySemiDark first-letter-capitalize ${
+                className={`text-greySemiDark first-letter:capitalize ${
                   index === 0 && "mb-5"
                 }`}
                 key={paragraph}

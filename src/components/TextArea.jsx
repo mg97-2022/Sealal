@@ -15,7 +15,7 @@ const TextArea = ({
       className={`flex flex-col justify-between min-w-[110px] w-full ${containerClassName}`}
     >
       <label
-        className={`mb-3 first-letter-capitalize text-sm ${
+        className={`mb-3 first-letter:capitalize text-sm ${
           errorMessage && "text-[10px] text-red-500"
         }`}
         htmlFor={name}

@@ -4,7 +4,7 @@ const FooterList = ({ title, list = [] }) => {
   const listLength = list.length;
   return (
     <div>
-      <h5 className="text-lg font-bold leading-7 mb-5 first-letter-capitalize">
+      <h5 className="text-lg font-bold leading-7 mb-5 first-letter:capitalize">
         {LangUtils.FetchWord(title)}
       </h5>
       <ul>
