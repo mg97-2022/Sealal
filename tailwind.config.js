@@ -25,6 +25,7 @@ module.exports = {
         greySemiDark: "#676767",
         greySemiDarkSecond: "#646464",
         greyDarkSecondary: "rgba(0, 0, 0, 0.1)",
+        lightPink: "#F6F3FF",
       },
       // fontSize: {
       //   "15px": "15px",
