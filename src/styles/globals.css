@@ -30,16 +30,38 @@ body {
   box-shadow: var(--box-shadow);
 }
 
-.first-letter-capitalize::first-letter {
-  text-transform: capitalize;
-}
-
 .grid-cols-layout {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 110px), 1fr));
 }
 
-/* react slick carousel */
-/* .slick-active {
-  width: 10px;
-  background-color: red;
-} */
+/* orders page styles */
+.orders-statuses-bar {
+  background-color: #a2a2a2;
+  height: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.active-orders-status {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 16%;
+  height: 100%;
+  background-color: #f0b846;
+  transition-duration: 0.3s;
+}
+.active-orders-status.ALL {
+  left: 0;
+}
+.active-orders-status.COMPLETED {
+  left: 16%;
+}
+.active-orders-status.PENDING {
+  left: 39%;
+}
+.active-orders-status.CANCELLED {
+  left: 61%;
+}
+.active-orders-status.RECOVERY {
+  left: 85%;
+}
