@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LangUtils from "../utils/language";
+import LangUtils from "@/utils/language";
 
 const PudoBenefitsCard = ({
   imgSrc,

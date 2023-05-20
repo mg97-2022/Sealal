@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import LangUtils from "../../utils/language";
+import LangUtils from "@/utils/language";
 
 const FooterContactUs = () => {
   const inputRef = useRef();

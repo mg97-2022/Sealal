@@ -1,5 +1,5 @@
 import Button from "./Button";
-import LangUtils from "../utils/language";
+import LangUtils from "@/utils/language";
 
 const ShippingCard = ({ icon, title, description, onClick, className }) => {
   return (

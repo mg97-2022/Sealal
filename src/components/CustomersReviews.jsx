@@ -1,5 +1,5 @@
 import LeftHeading from "./LeftHeading";
-import LangUtils from "../utils/language";
+import LangUtils from "@/utils/language";
 import Link from "next/link";
 
 import img from "public/reviews.png";

@@ -1,4 +1,4 @@
-import LangUtils from "../utils/language";
+import LangUtils from "@/utils/language";
 
 const KeenToKnow = () => {
   return (

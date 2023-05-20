@@ -1,3 +1,5 @@
+import LangUtils from "@/utils/language";
+
 const Checkbox = ({
   containerClassName,
   label,
@@ -19,7 +21,7 @@ const Checkbox = ({
         className={"first-letter:capitalize text-lg text-greyDark"}
         htmlFor={name}
       >
-        {label}
+        {LangUtils.FetchWord(label)}
       </label>
     </div>
   );

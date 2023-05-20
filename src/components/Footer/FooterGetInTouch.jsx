@@ -1,4 +1,4 @@
-import LangUtils from "../../utils/language";
+import LangUtils from "@/utils/language";
 import LocationIcon from "../icons/LocationIcon";
 import SmallEmailIcon from "../icons/SmallEmailIcon";
 import TelephoneIcon from "../icons/TelephoneIcon";

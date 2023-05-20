@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ShareIcon from "./icons/ShareIcon";
-import LangUtils from "../utils/language";
+import LangUtils from "@/utils/language";
 
 const BannerWithText = ({
   title,
