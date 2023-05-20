@@ -53,7 +53,7 @@ const MainHeader = () => {
             <li>
               <Link
                 className="capitalize text-primaryLight text-sm font-medium"
-                href="/"
+                href="contact-us"
               >
                 {LangUtils.FetchWord("contactUs")}
               </Link>
