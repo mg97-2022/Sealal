@@ -183,6 +183,19 @@ export const en = {
   pending: "pending",
   cancelled: "cancelled",
   recovery: "recovery",
+  // delivery profile page
+  // delivery request section
+  deliveryRequests: "delivery requests",
+  orderNumber: "order number",
+  details: "details",
+  orderStatus: "order status",
+  sendCode: "send code",
+  sendVerificationCode: "send verification code",
+  // code verification section
+  codeVerification: "code verification",
+  enterOTP: "Enter OTP sent to you",
+  verifyCode: "verify code",
+  resendCode: "resend code",
 
   // old translation
   login: "login",
