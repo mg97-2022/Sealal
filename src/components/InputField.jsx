@@ -1,3 +1,5 @@
+import LangUtils from "../utils/language";
+
 const InputField = ({
   containerClassName,
   label,
@@ -9,6 +11,7 @@ const InputField = ({
   otherValidations,
   errorMessage,
   inputClassName,
+  labelClassName,
   input,
 }) => {
   return (
@@ -16,16 +19,16 @@ const InputField = ({
       className={`flex flex-col justify-between min-w-[110px] w-full ${containerClassName}`}
     >
       <label
-        className={`mb-3 first-letter-capitalize text-sm ${
+        className={`mb-3 first-letter:capitalize text-sm ${
           errorMessage && "text-[10px] text-red-500"
-        }`}
+        } ${labelClassName}`}
         htmlFor={name}
       >
-        {label}
+        {LangUtils.FetchWord(label)}
         {!!errorMessage && <span>{errorMessage}</span>}
       </label>
       <input
-        className={`bg-transparent rounded-2 rounded-[10px] border border-black outline-none h-10 px-2 text-xs placeholder:text-greyLightFourth ${inputClassName} ${
+        className={`bg-transparent rounded-2 rounded-[10px] border border-black outline-none h-10 px-2 text-xs placeholder:capitalize placeholder:text-greyLightFourth ${inputClassName} ${
           !!errorMessage && "border-red-500"
         }`}
         id={name}
@@ -34,7 +37,9 @@ const InputField = ({
           required: required && ` is required *`,
           ...otherValidations,
         })}
-        placeholder={placeholder || label}
+        placeholder={
+          LangUtils.FetchWord(placeholder) || LangUtils.FetchWord(label)
+        }
         {...input}
       />
     </div>
