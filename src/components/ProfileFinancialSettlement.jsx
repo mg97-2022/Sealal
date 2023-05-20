@@ -18,7 +18,7 @@ const ProfileFinancialSettlement = () => {
   return (
     <div>
       <ProfilePageHeader heading="financialSettlement" />
-      <div className="bg-[#F7F7F7] px-[18px] pt-[29px] pb-[45px]">
+      <div className="bg-[#F7F7F7] px-[18px] pt-[15px] pb-[35px]">
         <form
           className="flex items-end gap-2 mt-4"
           onSubmit={handleSubmit(submitHandler)}
