@@ -1,4 +1,4 @@
-import LangUtils from "../utils/language";
+import LangUtils from "@/utils/language";
 
 const InputField = ({
   containerClassName,
@@ -34,7 +34,10 @@ const InputField = ({
         id={name}
         type={type || "text"}
         {...register(name, {
-          required: required && ` is required *`,
+          required: {
+            value: required,
+            message: " is required *",
+          },
           ...otherValidations,
         })}
         placeholder={
