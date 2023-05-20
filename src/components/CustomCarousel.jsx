@@ -2,7 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ArrowIcon from "./icons/ArrowIcon";
+import ArrowLeft from "./icons/ArrowLeft";
+import ArrowRight from "./icons/ArrowRight";
 
 const CustomCarousel = ({
   children,
@@ -12,16 +13,21 @@ const CustomCarousel = ({
   responsive,
   pagination = true,
 }) => {
+  const paginationDots = (dots) => (
+    <div>
+      <ul style={{ paddingTop: "10px" }}>{dots}</ul>
+    </div>
+  );
+
   const settings = {
     arrows: true, // used to show navigation arrows
     accessibility: true, // used to enable scroll
-    nextArrow: <ArrowIcon reverse />, // next navigation arrow
-    prevArrow: <ArrowIcon />, // previous navigation arrow
+    nextArrow: <ArrowRight />, // next navigation arrow
+    prevArrow: <ArrowLeft />, // previous navigation arrow
     dots: pagination, // used to show pagination arrows
-    // dotsClass: "",
-    // appendDots: dots => <ul>{dots}</ul>, // used to show custom pagination (like customPaging)
-    // customPaging: (i) => {} // used to show custom pagination ({i + 1} is the current)
-    autoplay: true,
+    dotsClass: "slick-dots",
+    appendDots: paginationDots,
+    autoplay: false,
     autoplaySpeed: 3000, // delay between each slide move
     centerMode: false, // used to show the current slide in the center of the page
     className: `${carouselClassName}`, // container className
