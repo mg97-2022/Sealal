@@ -5,7 +5,7 @@ import DeliveryPartner from "../components/DeliveryPartner";
 import WhyUs from "@/components/WhyUs";
 import CustomersReviews from "@/components/CustomersReviews";
 
-export default function Home() {
+const Home = () => {
   return (
     <main>
       <MainBannerWithText
@@ -77,4 +77,6 @@ export default function Home() {
       <CustomersReviews />
     </main>
   );
-}
+};
+
+export default Home;

@@ -3,9 +3,9 @@ import KeenToKnow from "@/components/KeenToKnow";
 import LetsWork from "@/components/LetsWork";
 import MainBannerWithText from "@/components/MainBannerWithText";
 
-const services = () => {
+const Services = () => {
   return (
-    <mai>
+    <main>
       <MainBannerWithText
         reverse="flex-row-reverse"
         sectionHeight="h-[559px]"
@@ -23,8 +23,8 @@ const services = () => {
       <LetsWork />
       <IntegratedPartners />
       <KeenToKnow />
-    </mai>
+    </main>
   );
 };
 
-export default services;
+export default Services;

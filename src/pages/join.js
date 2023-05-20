@@ -5,7 +5,7 @@ import PudoBenefits from "@/components/PudoBenefits";
 import PudoPoints from "@/components/PudoPoints";
 import StorePudoPoints from "@/components/StorePudoPoints";
 
-const join = () => {
+const Join = () => {
   return (
     <main>
       <MainBannerWithText
@@ -39,4 +39,4 @@ const join = () => {
   );
 };
 
-export default join;
+export default Join;
