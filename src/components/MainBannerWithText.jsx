@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Overlay from "./Overlay";
-import LangUtils from "../utils/language";
+import LangUtils from "@/utils/language";
 import Button from "./Button";
+import CustomLink from "./CustomLink";
 
 const MainBannerWithText = ({
   reverse,
@@ -16,9 +17,31 @@ const MainBannerWithText = ({
   bannerHeight,
   buttonText,
   buttonColor,
+  buttonClassName,
+  buttonType,
   onClick,
-  backgroundColor
+  link,
+  backgroundColor,
 }) => {
+  let content;
+  if (link) {
+    content = (
+      <CustomLink link={link} bgColor={buttonColor} className={buttonClassName}>
+        {buttonText}
+      </CustomLink>
+    );
+  } else {
+    content = (
+      <Button
+        button={buttonText}
+        onClick={onClick}
+        buttonColor={buttonColor}
+        className={buttonClassName}
+        type={buttonType}
+      />
+    );
+  }
+
   return (
     <section
       className={`relative ${backgroundColor} ${
@@ -26,11 +49,11 @@ const MainBannerWithText = ({
       }`}
     >
       <div
-        className={`container relative ${
+        className={`container-lg relative ${
           contentTop ? contentTop : "top-[200px]"
         }`}
       >
-        <div className={`flex items-center justify-between ${reverse}`}>
+        <div className={`flex items-center justify-between gap-5 ${reverse}`}>
           <div className="text-center w-[450px] w-min-[450px]">
             {extraHeading && (
               <h4 className="text-2xl text-secondary leading-7">
@@ -47,11 +70,7 @@ const MainBannerWithText = ({
             >
               {LangUtils.FetchWord(description)}
             </p>
-            <Button
-              button={buttonText}
-              onClick={onClick}
-              buttonColor={buttonColor}
-            />
+            {content}
           </div>
           <Image
             className={`h-[${bannerHeight}px]`}

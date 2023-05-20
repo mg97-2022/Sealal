@@ -1,3 +1,5 @@
+import LangUtils from "@/utils/language";
+
 const TextArea = ({
   containerClassName,
   label,
@@ -24,14 +26,14 @@ const TextArea = ({
         {!!errorMessage && <span>{errorMessage}</span>}
       </label>
       <textarea
-        className={`resize-none rounded-2 rounded-[10px] border bg-white border-greyLightFifth outline-none py-2 px-2 text-xs placeholder:text-greyLightFourth ${textAreaClassName} ${
+        className={`resize-none rounded-2 rounded-[10px] placeholder:capitalize border bg-white border-greyLightFifth outline-none py-2 px-2 text-xs placeholder:text-greyLightFourth ${textAreaClassName} ${
           !!errorMessage && "border-red-500"
         }`}
         id={name}
         {...register(name, {
           required: required && ` is required *`,
         })}
-        placeholder={placeholder || label}
+        placeholder={LangUtils.FetchWord(placeholder || label)}
         cols={cols || "30"}
         rows={rows || "10"}
       />

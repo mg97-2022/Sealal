@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import LangUtils from "../../utils/language";
+import LangUtils from "@/utils/language";
 import SupportIcon from "../icons/SupportIcon";
 
 const MainHeader = () => {
@@ -10,11 +10,11 @@ const MainHeader = () => {
         <div className="flex justify-start items-center gap-24">
           <Link href="/">
             <Image
-              className="h-[80px]"
-              src="/logo.png"
+              className="h-[29px]"
+              src="/logo-2.png"
               alt="Logo"
-              width={158}
-              height={80}
+              width={115}
+              height={29}
             />
           </Link>
           <ul className="flex justify-start gap-10 text-primaryLight font-medium">

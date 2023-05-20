@@ -4,6 +4,7 @@ import InputField from "./InputField";
 import Button from "./Button";
 import TextArea from "./TextArea";
 import Checkbox from "./Checkbox";
+import LangUtils from "@/utils/language";
 
 const LetsChatForm = () => {
   const {
@@ -16,8 +17,6 @@ const LetsChatForm = () => {
     console.log(values);
   };
 
-  console.log(errors);
-
   return (
     <section className="pt-16 pb-10 bg-greyLightThird mb-32">
       <SectionHeader
@@ -28,6 +27,7 @@ const LetsChatForm = () => {
       <form
         className="container mt-[70px]"
         onSubmit={handleSubmit(submitHandler)}
+        noValidate
       >
         <div className="grid grid-cols-2 gap-8 mb-8">
           <InputField
@@ -60,7 +60,11 @@ const LetsChatForm = () => {
             errorMessage={errors.email?.message}
             inputClassName="bg-white border-greyLightFifth"
             otherValidations={{
-              pattern: "^([a-zA-Z0-9_-.]+)@([a-zA-Z0-9_-.]+).([a-zA-Z]{2,5})$",
+              pattern: {
+                value:
+                  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                message: " invalid format",
+              },
             }}
           />
         </div>
@@ -84,7 +88,7 @@ const LetsChatForm = () => {
             name="agreeToCommunicate"
             label="iAgreeToReceive"
           />
-          <div className="mt-6 pl-10">
+          <div className="mt-6 pl-9">
             {["youCanUnsubscribe", "byClicking"].map((paragraph, index) => (
               <p
                 className={`text-greySemiDark first-letter:capitalize ${
@@ -92,7 +96,7 @@ const LetsChatForm = () => {
                 }`}
                 key={paragraph}
               >
-                {paragraph}
+                {LangUtils.FetchWord(paragraph)}
               </p>
             ))}
           </div>

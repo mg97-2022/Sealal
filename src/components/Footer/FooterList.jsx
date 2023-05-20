@@ -1,16 +1,16 @@
-import LangUtils from "../../utils/language";
+import Link from "next/link";
+import LangUtils from "@/utils/language";
 
 const FooterList = ({ title, list = [] }) => {
-  const listLength = list.length;
   return (
     <div>
       <h5 className="text-lg font-bold leading-7 mb-5 first-letter:capitalize">
         {LangUtils.FetchWord(title)}
       </h5>
       <ul>
-        {list.map((item, index) => (
-          <li key={item} className={"mb-4 text-sm capitalize"}>
-            {LangUtils.FetchWord(item)}
+        {list.map((item) => (
+          <li key={item.title} className={"mb-4 text-sm capitalize"}>
+            <Link href={item.link}>{LangUtils.FetchWord(item.title)}</Link>
           </li>
         ))}
       </ul>

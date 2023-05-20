@@ -13,10 +13,10 @@ const Home = () => {
         heading="lastMile"
         description="doorToDoor"
         bannerSrc="/home-banner.png"
-        bannerWidth={900}
+        bannerWidth={1090}
         bannerHeight={700}
         buttonText="contactUs"
-        onClick={() => {}}
+        link="contact-us"
       />
       <DeliveryPartner />
       <WhyUs />

@@ -31,7 +31,7 @@ const menuList = [
 ];
 
 const Profile = () => {
-  const [activeSection, setActiveSection] = useState(sections.ORDERS);
+  const [activeSection, setActiveSection] = useState(sections.PROFILE_INFO);
 
   const changeActiveSectionHandler = (section) => setActiveSection(section);
 
@@ -56,8 +56,6 @@ const Profile = () => {
     >
       {content()}
     </ProfileLayout>
-    // <main className="pt-[120px]">
-    // </main>
   );
 };
 

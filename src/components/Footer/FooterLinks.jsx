@@ -2,8 +2,42 @@ import FooterAboutUs from "./FooterAboutUs";
 import FooterGetInTouch from "./FooterGetInTouch";
 import FooterList from "./FooterList";
 
-const usefulLinks = ["about", "blog", "agencies", "contact"];
-const helpSupportList = ["login", "myAccount", "subscribe", "contact"];
+const usefulLinks = [
+  {
+    title: "about",
+    link: "about",
+  },
+  {
+    title: "blog",
+    link: "blog",
+  },
+  {
+    title: "agencies",
+    link: "agencies",
+  },
+  {
+    title: "contact",
+    link: "contact-us",
+  },
+];
+const helpSupportList = [
+  {
+    title: "login",
+    link: "login",
+  },
+  {
+    title: "myAccount",
+    link: "profile",
+  },
+  {
+    title: "subscribe",
+    link: "subscribe",
+  },
+  {
+    title: "contact",
+    link: "contact-us",
+  },
+];
 
 const FooterLinks = () => {
   return (

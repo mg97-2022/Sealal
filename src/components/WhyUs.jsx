@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Button from "./Button";
-import LangUtils from "../utils/language";
+import LangUtils from "@/utils/language";
 import ShareIcon from "./icons/ShareIcon";
+import CustomLink from "./CustomLink";
 
 const WhyUs = () => {
   return (
@@ -35,7 +36,7 @@ const WhyUs = () => {
           <span className="block  text-greyDark text-lg my-6">
             {LangUtils.FetchWord("keenTo")}
           </span>
-          <Button button="contactUs" onClick={() => {}} />
+          <CustomLink link="contact-us">contactUs</CustomLink>
         </div>
       </div>
     </section>
