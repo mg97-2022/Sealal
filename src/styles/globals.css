@@ -25,6 +25,13 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.container-lg {
+  max-width: 1500px !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 .box-shadow {
   box-shadow: var(--box-shadow);
@@ -64,4 +71,35 @@ body {
 }
 .active-orders-status.RECOVERY {
   left: 85%;
+}
+.slick-dots {
+  bottom: -45px !important;
+}
+.slick-dots ul {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+.slick-dots ul li {
+  margin: 0;
+}
+.slick-dots ul li.slick-active {
+  width: 50px !important;
+}
+.slick-dots ul li button::before {
+  content: "";
+  height: 4px;
+  width: 20px;
+  background-color: #23286280;
+  opacity: 1 !important;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  transition-duration: 0.3s;
+}
+.slick-dots ul li.slick-active button::before {
+  background-color: #232862 !important;
+  width: 50px !important;
 }
