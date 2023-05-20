@@ -1,4 +1,4 @@
-import LangUtils from "../../utils/language";
+import LangUtils from "@/utils/language";
 
 const OrdersTabs = ({
   ordersStatuses,
@@ -12,7 +12,7 @@ const OrdersTabs = ({
           <li
             key={status.id}
             onClick={() => onChangeActiveOrdersStatus(status.id)}
-            className="text-lg capitalize text-[#A2A2A2] font-semibold text-center"
+            className="text-lg first-letter:capitalize text-[#A2A2A2] font-semibold text-center"
           >
             {LangUtils.FetchWord(status.status)}
           </li>
