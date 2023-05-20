@@ -120,6 +120,7 @@ export const en = {
   whoDoYouNeed: "who do you need to get in touch with?",
   messagePurpose: "purpose of message",
   firstName: "first name",
+  lastName: "last name",
   contactNumber: "contact number",
   email: "email",
   subject: "subject",
@@ -156,11 +157,32 @@ export const en = {
   phoneNumber: "phone number",
   emailAddress: "e-mail address",
   lorem: "Lorem Ipsum is simply dummy text of the printing",
-
-
-
-
-
+  // profile page
+  hello: "Hello",
+  profileInfo: "profile info",
+  financialSettlement: "financial settlement",
+  myOrders: "my orders",
+  newShipment: "new shipment",
+  // profile info section
+  generalInfo: "general info",
+  update: "update",
+  security: "security",
+  password: "password",
+  "**********": "**********",
+  "exampel@exampel.com": "exampel@exampel.com",
+  profileCode: "profile code",
+  // financial section
+  amountsDue: "amounts due",
+  "100$": "100$",
+  myBalance: "my balance",
+  "125$": "125$",
+  requestAmount: "request amount",
+  // orders section
+  all: "all",
+  completed: "completed",
+  pending: "pending",
+  cancelled: "cancelled",
+  recovery: "recovery",
 
   // old translation
   login: "login",
