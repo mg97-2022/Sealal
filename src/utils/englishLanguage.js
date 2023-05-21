@@ -134,6 +134,41 @@ export const en = {
 
   // Home page
   submit: "submit",
+  // forms
+  shippingType: "shipping type",
+  shipmentType: "shipment type",
+  tall: "tall",
+  width: "width",
+  height: "height",
+  weight: "weight",
+  number: "number",
+  city: "city",
+  region: "region",
+  street: "street",
+  receiverName: "receiver name",
+  specialMarque: "special marque",
+  receiverInfo: "receiver info",
+  name: "name",
+  title: "title",
+  phone: "phone",
+  otherPhone: "other phone",
+  deliveryGender: "delivery gender",
+  man: "man",
+  woman: "woman",
+  measureClothes: "measureClothes",
+  available: "available",
+  unavailable: "unavailable",
+  timeToDelivery: "timeToDelivery",
+  date: "date",
+  hour: "hour",
+  from: "from",
+  to: "to",
+  payment: "payment",
+  cash: "cash",
+  done: "done",
+  buyer: "buyer",
+  seller: "seller",
+  isRequired: " is required*",
   // services page
   services: "services",
   bePartOfGrowing:
@@ -213,7 +248,42 @@ export const en = {
   receiptInWarehouse: "receipt in warehouse",
   sendToSeller: "send to seller's address",
   orderCongratulations: "Congratulations, your order done!",
+  // FAQ page
+  askAnything: "ask us anything",
+  faq: "faq",
+  searchFor: "Search For any qestion",
+  // grid boxes
+  // first
+  firstTitle: "How do I change my account email?",
+  firstDescription: "You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email.",
+  // second
+  secondTitle: "What should I do if my payment fails?",
+  secondDescription: "If your payment fails, you can use the (COD) payment option, if available on that order. If your payment is debited from your account after a payment failure, it will be credited back within 7-10 days.",
+  // third
+  thirdTitle: "What is your cancellation policy?",
+  thirdDescription: "You can now cancel an order when it is in packed/shipped status. Any amount paid will be credited into the same payment mode using which the payment was made",
+  // fourth
+  fourthTitle: "How do I check order delivery status ?",
+  fourthDescription: "Please tap on “My Orders” section under main menu of App/Website/M-site to check your order status.",
+  // fifth
+  fifthTitle: "What is Instant Refunds?",
+  fifthDescription: "Upon successful pickup of the return product at your doorstep, Myntra will instantly initiate the refund to your source account or chosen method of refund. Instant Refunds is not available in a few select pin codes and for all self ship returns.",
+  // sixth
+  sixthTitle: "How do I apply a coupon on my order?",
+  sixthDescription: "You can apply a coupon on cart page before order placement. The complete list of your unused and valid coupons will be available under “My Coupons” tab of App/Website/M-site.",
+  // 
+  ifHaveQuestions: "If you have any other questions",
+  ifHaveQuestionsDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+  stillHaveQ:"Still have questions?",
+  cantFindAns : "Can’t find the answer you’re looking for? Please chat to our friendly team.",
+  getInTouch: "Get in touch",
 
+
+
+  // internal shipping page
+
+  //  international shipping page
+  saveInformation: "save this information",
   // old translation
   login: "login",
   signup: "Signup",

@@ -11,6 +11,25 @@ const HomeInternationalShipping = () => {
     formState: { errors },
   } = useForm();
 
+  const {
+    shippingType,
+    country,
+    tall,
+    width,
+    height,
+    weight,
+    number,
+    city,
+    region,
+    street,
+    receiverName,
+    specialMarque,
+    name,
+    title,
+    phone,
+    otherPhone,
+  } = errors || {};
+
   const onSubmit = (data) => {
     console.log(data);
   };
@@ -21,14 +40,14 @@ const HomeInternationalShipping = () => {
         <SelectInputField
           register={register}
           name="shippingType"
-          label="shipping type"
-          errorMessage={errors.shippingType?.message}
+          label="shippingType"
+          errorMessage={shippingType?.message}
         ></SelectInputField>
         <SelectInputField
           register={register}
           name="country"
           label="country"
-          errorMessage={errors.country?.message}
+          errorMessage={country?.message}
         ></SelectInputField>
       </HomeFormInputsContainer>
       <HomeFormInputsContainer>
@@ -37,35 +56,35 @@ const HomeInternationalShipping = () => {
           type="number"
           name="tall"
           label="tall"
-          errorMessage={errors.tall?.message}
+          errorMessage={tall?.message}
         />
         <InputField
           register={register}
           type="number"
           name="width"
           label="width"
-          errorMessage={errors.width?.message}
+          errorMessage={width?.message}
         />
         <InputField
           register={register}
           type="number"
           name="height"
           label="height"
-          errorMessage={errors.height?.message}
+          errorMessage={height?.message}
         />
         <InputField
           register={register}
           type="number"
           name="weight"
           label="weight"
-          errorMessage={errors.weight?.message}
+          errorMessage={weight?.message}
         />
         <InputField
           register={register}
           type="number"
           name="number"
           label="number"
-          errorMessage={errors.number?.message}
+          errorMessage={number?.message}
         />
       </HomeFormInputsContainer>
       <HomeFormInputsContainer className="border-none pt-2">
@@ -73,33 +92,33 @@ const HomeInternationalShipping = () => {
           register={register}
           name="city"
           label="city"
-          errorMessage={errors.city?.message}
+          errorMessage={city?.message}
         ></SelectInputField>
         <InputField
           register={register}
           name="region"
           label="region"
-          errorMessage={errors.region?.message}
+          errorMessage={region?.message}
         />
         <InputField
           register={register}
           name="street"
           label="street"
-          errorMessage={errors.street?.message}
+          errorMessage={street?.message}
         />
         <InputField
           register={register}
           name="receiverName"
-          label="receiver name"
-          errorMessage={errors.receiverName?.message}
+          label="receiverName"
+          errorMessage={receiverName?.message}
         />
       </HomeFormInputsContainer>
       <HomeFormInputsContainer className="pt-0">
         <InputField
           register={register}
           name="specialMarque"
-          label="special marque"
-          errorMessage={errors.specialMarque?.message}
+          label="specialMarque"
+          errorMessage={specialMarque?.message}
         />
       </HomeFormInputsContainer>
       <span className="block first-letter:capitalize font-medium mt-3 pl-[14px]">
@@ -110,25 +129,25 @@ const HomeInternationalShipping = () => {
           register={register}
           name="name"
           label="name"
-          errorMessage={errors.name?.message}
+          errorMessage={name?.message}
         />
         <InputField
           register={register}
           name="title"
           label="title"
-          errorMessage={errors.title?.message}
+          errorMessage={title?.message}
         />
         <InputField
           register={register}
           name="phone"
           label="phone"
-          errorMessage={errors.phone?.message}
+          errorMessage={phone?.message}
         />
         <InputField
           register={register}
           name="otherPhone"
-          label="other phone"
-          errorMessage={errors.otherPhone?.message}
+          label="otherPhone"
+          errorMessage={otherPhone?.message}
         />
       </HomeFormInputsContainer>
       <div className="flex justify-center mt-5">

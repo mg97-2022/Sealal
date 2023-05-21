@@ -1,3 +1,5 @@
+import LangUtils from "@/utils/language";
+
 const SelectInputField = ({
   children,
   containerClassName,
@@ -6,6 +8,7 @@ const SelectInputField = ({
   type,
   placeholder,
   register,
+  otherValidations,
   errorMessage,
   required = true,
   inputClassName,
@@ -21,8 +24,8 @@ const SelectInputField = ({
         }`}
         htmlFor={name}
       >
-        {label}
-        {!!errorMessage && <span>{errorMessage}</span>}
+        {LangUtils.FetchWord(label)}
+        {!!errorMessage && <span>{LangUtils.FetchWord(errorMessage)}</span>}
       </label>
       <select
         className={`bg-transparent rounded-2 rounded-[10px] border border-black outline-none h-10 px-2 text-xs placeholder:text-greyLightFourth ${inputClassName} ${
@@ -31,9 +34,15 @@ const SelectInputField = ({
         id={name}
         type={type || "text"}
         {...register(name, {
-          required: required && ` is required *`,
+          required: {
+            value: required,
+            message: "isRequired",
+          },
+          ...otherValidations,
         })}
-        placeholder={placeholder || label}
+        placeholder={
+          LangUtils.FetchWord(placeholder) || LangUtils.FetchWord(label)
+        }
         {...input}
       >
         {children}

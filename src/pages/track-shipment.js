@@ -1,8 +1,9 @@
 import ShipmentCompleted from "@/components/TrackShipment/ShipmentCompleted";
 import ShipmentDetails from "@/components/TrackShipment/ShipmentDetails";
+import ShipmentFailed from "@/components/TrackShipment/ShipmentFailed";
 import ShipmentStatuses from "@/components/TrackShipment/ShipmentStatuses";
 
-const dummyShipmentStatus = "delivered";
+const dummyShipmentStatus = "completed";
 
 const TrackShipment = () => {
   const isShippingFirstStep = dummyShipmentStatus === "received";
@@ -17,7 +18,7 @@ const TrackShipment = () => {
   if (isStillShipping) {
     shipmentContent = <ShipmentDetails />;
   } else if (isShipmentFailed) {
-    shipmentContent = <shipmentFailed />;
+    shipmentContent = <ShipmentFailed />;
   } else if (isShipmentCompleted) {
     shipmentContent = <ShipmentCompleted />;
   }

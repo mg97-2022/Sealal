@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import InputField from "../InputField";
-import SquareFilledButton from "../SquareFilledButton";
+import SquareButton from "../SquareButton";
 import SectionHeading from "./SectionHeading";
 
 const ProfileGeneralInfo = () => {
@@ -37,9 +37,9 @@ const ProfileGeneralInfo = () => {
           inputClassName="bg-white border-greyLightFifth h-[60px] pl-[18px]"
           labelClassName="text-black"
         />
-        <SquareFilledButton type="submit" className="h-[60px]">
+        <SquareButton type="submit" className="h-[60px]">
           update
-        </SquareFilledButton>
+        </SquareButton>
       </form>
     </div>
   );

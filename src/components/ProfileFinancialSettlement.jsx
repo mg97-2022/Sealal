@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import InputField from "./InputField";
 import SectionHeading from "./ProfileInfo/SectionHeading";
 import ProfilePageHeader from "./ProfilePageHeader";
-import SquareFilledButton from "./SquareFilledButton";
+import SquareButton from "./SquareButton";
 
 const ProfileFinancialSettlement = () => {
   const {
@@ -41,9 +41,9 @@ const ProfileFinancialSettlement = () => {
             labelClassName="text-black"
             placeholder="125$"
           />
-          <SquareFilledButton type="submit" className="h-[60px] px-10">
+          <SquareButton type="submit" className="h-[60px] px-10">
             requestAmount
-          </SquareFilledButton>
+          </SquareButton>
         </form>
       </div>
     </div>

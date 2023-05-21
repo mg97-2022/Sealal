@@ -16,6 +16,9 @@ const ShipmentStatuses = ({
     isShippingFirstStep || isShippingSecondStep || isShippingThirdStep;
   const secondStepActive = isShippingSecondStep || isShippingThirdStep;
 
+  console.log(isShipmentCompleted, "completed");
+  console.log(isShipmentFailed, "failed");
+
   return (
     <div className="flex gap-10 relative">
       <SingleShipmentStatus

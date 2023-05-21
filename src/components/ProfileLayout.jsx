@@ -1,5 +1,4 @@
 import ProfileMenu from "./ProfileMenu";
-import ProfilePageHeader from "./ProfilePageHeader";
 
 const ProfileLayout = ({
   children,
