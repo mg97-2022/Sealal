@@ -1,6 +1,6 @@
 import LangUtils from "@/utils/language";
 import Image from "next/image";
-import SearchBar from "./Searchbar";
+import SearchBar from "./SearchBar";
 
 const FAQBanner = () => {
   return (
