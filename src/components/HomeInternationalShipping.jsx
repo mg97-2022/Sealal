@@ -155,8 +155,8 @@ const HomeInternationalShipping = () => {
         <Button
           type="submit"
           button="submit"
-          buttonColor="bg-secondary"
           className="px-24 py-1"
+          buttonColor="bg-secondary"
         />
       </div>
     </form>

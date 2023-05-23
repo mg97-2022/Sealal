@@ -20,7 +20,7 @@ const InputField = ({
     >
       <label
         className={`mb-3 first-letter:capitalize text-sm ${
-          errorMessage && "text-[10px] text-red-500"
+          errorMessage && "text-xs text-red-500"
         } ${labelClassName}`}
         htmlFor={name}
       >

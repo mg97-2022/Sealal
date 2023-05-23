@@ -4,6 +4,13 @@ import InputField from "./InputField";
 import { useForm } from "react-hook-form";
 import SelectInputField from "./SelectInputField";
 import LangUtils from "@/utils/language";
+import CustomRadio from "./CustomRadio";
+import DatePicker from "./DatePicker";
+
+const GENDER_LIST = ["man", "female"];
+const MEASURE_CLOTHES = ["available", "unavailable"];
+const PAYMENT = ["cash", "done"];
+const COST = ["buyer", "seller"];
 
 const HomeInternalShipping = () => {
   const {
@@ -87,7 +94,7 @@ const HomeInternalShipping = () => {
           label="number"
           errorMessage={number?.message}
         />
-      </HomeFormInputsContainer >
+      </HomeFormInputsContainer>
       <HomeFormInputsContainer className="border-none pt-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <SelectInputField
           register={register}
@@ -122,9 +129,9 @@ const HomeInternalShipping = () => {
           errorMessage={specialMarque?.message}
         />
       </HomeFormInputsContainer>
-      <span className="block first-letter:capitalize font-medium mt-3 pl-[14px]">
+      <h5 className="block first-letter:capitalize font-medium mt-3 pl-[14px]">
         {LangUtils.FetchWord("receiverInfo")}
-      </span>
+      </h5>
       <HomeFormInputsContainer className="grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <InputField
           register={register}
@@ -151,14 +158,87 @@ const HomeInternalShipping = () => {
           errorMessage={otherPhone?.message}
         />
       </HomeFormInputsContainer>
-      <HomeFormInputsContainer>
-        <div>delivery gender</div>
-        <div>measure clothes</div>
-      </HomeFormInputsContainer>
-      <HomeFormInputsContainer>
-        <div>date</div>
-        <div>hour</div>
-      </HomeFormInputsContainer>
+      <div className="grid grid-cols-1 gap-5 xl:grid-cols-2 xl:gap-0 py-5 px-[14px] border-b border-b-greyDarkSecondary">
+        <div className="xl:border-r xl:border-r-greyDarkSecondary w-[230px]">
+          <h5 className="block first-letter:capitalize font-medium mb-3">
+            {LangUtils.FetchWord("deliveryGender")}
+          </h5>
+          <CustomRadio
+            name="gender"
+            defaultValue="man"
+            register={register}
+            radioInputsList={GENDER_LIST}
+          />
+        </div>
+        <div>
+          <h5 className="block first-letter:capitalize font-medium mb-3">
+            {LangUtils.FetchWord("measureClothes")}
+          </h5>
+          <CustomRadio
+            name="measureClothes"
+            defaultValue="available"
+            register={register}
+            radioInputsList={MEASURE_CLOTHES}
+          />
+        </div>
+      </div>
+      <div className="grid grid-cols-1 py-5 px-[14px]">
+        <div className="mb-5">
+          <h5 className="block first-letter:capitalize font-medium mb-3">
+            {LangUtils.FetchWord("timeToDelivery")}
+          </h5>
+          <div className="flex justify-center mt-6">
+            <DatePicker />
+          </div>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div>
+            <h5 className="block first-letter:capitalize font-medium mb-3">
+              {LangUtils.FetchWord("hour")}
+            </h5>
+            <div className="grid grid-cols-2 gap-2">
+              <InputField
+                register={register}
+                name="hourFrom"
+                label="from"
+                placeholder="9am"
+                errorMessage={otherPhone?.message}
+              />
+              <InputField
+                register={register}
+                name="hourTo"
+                label="to"
+                placeholder="5pm"
+                errorMessage={otherPhone?.message}
+              />
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="mb-5">
+              <h5 className="block first-letter:capitalize font-medium mb-3">
+                {LangUtils.FetchWord("payment")}
+              </h5>
+              <CustomRadio
+                name="payment"
+                defaultValue="cash"
+                register={register}
+                radioInputsList={PAYMENT}
+              />
+            </div>
+            <div>
+              <h5 className="block first-letter:capitalize font-medium mb-3">
+                {LangUtils.FetchWord("cost")}
+              </h5>
+              <CustomRadio
+                name="cost"
+                defaultValue="buyer"
+                register={register}
+                radioInputsList={COST}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="flex justify-center mt-5">
         <Button
           type="submit"

@@ -7,7 +7,7 @@ const ContactCard = ({ icon, title, description }) => {
       <h3 className="text-[20px] font-medium mt-3 mb-4 capitalize">
         {LangUtils.FetchWord(title)}
       </h3>
-      <p className="text-greySemiDarkSecond text-lg leading-[150%]">
+      <p className="text-greySemiDarkSecond text-lg leading-[150%] px-4">
         {LangUtils.FetchWord(description)}
       </p>
     </div>

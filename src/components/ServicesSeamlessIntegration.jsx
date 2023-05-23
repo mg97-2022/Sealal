@@ -18,7 +18,7 @@ const ServicesSeamlessIntegration = () => {
         imgWidth={223}
         imgHeight={136}
         containerClassName="justify-end pt-[100px]"
-        contentClassName="gap-20"
+        contentClassName="gap-32"
         textClassName="w-[530px]"
       />
       <SeamlessIntegration
@@ -38,7 +38,7 @@ const ServicesSeamlessIntegration = () => {
         imgWidth={228}
         imgHeight={152}
         containerClassName="justify-end pt-[50px]"
-        contentClassName="gap-20"
+        contentClassName="gap-32"
         textClassName="w-[380px]"
       />
     </section>

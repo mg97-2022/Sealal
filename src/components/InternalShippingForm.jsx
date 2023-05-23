@@ -5,8 +5,21 @@ import Button from "@/components/Button";
 import Checkbox from "@/components/Checkbox";
 import ShippingPagesHeading from "./ShippingPagesHeading";
 import { useForm } from "react-hook-form";
+import CustomRadio from "./CustomRadio";
+import DatePicker from "./DatePicker";
+import { setDate } from "date-fns";
+import { useState } from "react";
+
+const GENDER_LIST = ["man", "female"];
+const MEASURE_CLOTHES = ["available", "unavailable"];
+const PAYMENT = ["cash", "done"];
+const COST = ["buyer", "seller"];
 
 const InternalShippingForm = () => {
+  const [date, selectedDate] = useState("");
+
+  const dateChangeHandler = (pickedDate) => setDate(selectedDate);
+
   const {
     register,
     handleSubmit,
@@ -136,15 +149,82 @@ const InternalShippingForm = () => {
             inputClassName="bg-white border-greyLightFifth h-[60px] pl-[18px]"
           />
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-9 border-b border-b-[#0000001A]">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-6 xl:gap-5 mb-9 pb-8 border-b border-b-[#0000001A]">
+          <div className="xl:border-r xl:border-r-greyDarkSecondary">
+            <h5 className="block first-letter:capitalize text-primary font-medium mb-3">
+              {LangUtils.FetchWord("deliveryGender")}
+            </h5>
+            <CustomRadio
+              name="gender"
+              defaultValue="man"
+              register={register}
+              radioInputsList={GENDER_LIST}
+            />
+          </div>
+          <div className="xl:border-r xl:border-r-greyDarkSecondary">
+            <h5 className="block first-letter:capitalize text-primary font-medium mb-3">
+              {LangUtils.FetchWord("measureClothes")}
+            </h5>
+            <CustomRadio
+              name="measureClothes"
+              defaultValue="available"
+              register={register}
+              radioInputsList={MEASURE_CLOTHES}
+            />
+          </div>
+          <div className="xl:border-r xl:border-r-greyDarkSecondary">
+            <h5 className="block first-letter:capitalize text-primary font-medium mb-3">
+              {LangUtils.FetchWord("payment")}
+            </h5>
+            <CustomRadio
+              name="payment"
+              defaultValue="cash"
+              register={register}
+              radioInputsList={PAYMENT}
+            />
+          </div>
+          <div>
+            <h5 className="block first-letter:capitalize text-primary font-medium mb-3">
+              {LangUtils.FetchWord("cost")}
+            </h5>
+            <CustomRadio
+              name="cost"
+              defaultValue="buyer"
+              register={register}
+              radioInputsList={COST}
+            />
+          </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-9">
-          <div>1</div>
-          <div>2</div>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3 sm:gap-3 mb-9">
+          <div>
+            <h5 className="block first-letter:capitalize text-primary font-medium mb-3">
+              {LangUtils.FetchWord("timeToDelivery")}
+            </h5>
+            <div>
+              <h5 className="block first-letter:capitalize font-medium mb-3">
+                {LangUtils.FetchWord("hour")}
+              </h5>
+              <div className="grid grid-cols-2 gap-2">
+                <InputField
+                  register={register}
+                  name="hourFrom"
+                  label="from"
+                  placeholder="9am"
+                  errorMessage={otherPhone?.message}
+                />
+                <InputField
+                  register={register}
+                  name="hourTo"
+                  label="to"
+                  placeholder="5pm"
+                  errorMessage={otherPhone?.message}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <DatePicker onChangeDate={dateChangeHandler} />
+          </div>
           <div className="flex flex-col items-center justify-center gap-3 mt-5">
             <Checkbox
               register={register}
