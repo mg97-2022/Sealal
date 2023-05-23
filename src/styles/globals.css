@@ -105,5 +105,8 @@ body {
 }
 
 .rdrCalendarWrapper {
-  background-color: transparent;
+  background-color: transparent !important;
+}
+.rdrSelected {
+  color: rgb(254, 229, 40) !important;
 }
