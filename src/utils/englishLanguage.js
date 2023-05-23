@@ -188,6 +188,17 @@ export const en = {
   ourIntegrated: "our integrated partners",
   keenToKnow: "keen to know more?",
   aBetterWay: "a better way to grow a single click",
+  seamlessIntegrationFirst: "SEAMLESS INTEGRATION WITH OUR E-COMMERCE PARTNERS",
+  seamlessIntegrationFirstDesc:
+    "Whether you’ve set up shop on Shopify, Shopcada, WooCommerce, or anywhere else, we make it incredibly easy for you to ship your parcels through our strong integrations with leading platforms. We’re also an official courier delivery partner of major marketplaces such as Lazada and Shopee.",
+  seamlessIntegrationSecond:
+    "SEAMLESS INTEGRATION WITH OUR E-COMMERCE PARTNERS",
+  seamlessIntegrationSecondDesc:
+    "Whether you’ve set up shop on Shopify, Shopcada, WooCommerce, or anywhere else, we make it incredibly easy for you to ship your parcels through our strong integrations with leading platforms. We’re also an official courier delivery partner of major marketplaces such as Lazada and Shopee.",
+  seamlessIntegrationThird: "SEAMLESS INTEGRATION WITH OUR E-COMMERCE PARTNERS",
+  seamlessIntegrationThirdDesc:
+    "Whether you’ve set up shop on Shopify, Shopcada, WooCommerce, or anywhere else, we make it incredibly easy for you to ship your parcels through our strong integrations with leading platforms. We’re also an official courier delivery partner of major marketplaces such as Lazada and Shopee.",
+
   // contact us page
   phoneNumber: "phone number",
   emailAddress: "e-mail address",
@@ -255,30 +266,36 @@ export const en = {
   // grid boxes
   // first
   firstTitle: "How do I change my account email?",
-  firstDescription: "You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email.",
+  firstDescription:
+    "You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email.",
   // second
   secondTitle: "What should I do if my payment fails?",
-  secondDescription: "If your payment fails, you can use the (COD) payment option, if available on that order. If your payment is debited from your account after a payment failure, it will be credited back within 7-10 days.",
+  secondDescription:
+    "If your payment fails, you can use the (COD) payment option, if available on that order. If your payment is debited from your account after a payment failure, it will be credited back within 7-10 days.",
   // third
   thirdTitle: "What is your cancellation policy?",
-  thirdDescription: "You can now cancel an order when it is in packed/shipped status. Any amount paid will be credited into the same payment mode using which the payment was made",
+  thirdDescription:
+    "You can now cancel an order when it is in packed/shipped status. Any amount paid will be credited into the same payment mode using which the payment was made",
   // fourth
   fourthTitle: "How do I check order delivery status ?",
-  fourthDescription: "Please tap on “My Orders” section under main menu of App/Website/M-site to check your order status.",
+  fourthDescription:
+    "Please tap on “My Orders” section under main menu of App/Website/M-site to check your order status.",
   // fifth
   fifthTitle: "What is Instant Refunds?",
-  fifthDescription: "Upon successful pickup of the return product at your doorstep, Myntra will instantly initiate the refund to your source account or chosen method of refund. Instant Refunds is not available in a few select pin codes and for all self ship returns.",
+  fifthDescription:
+    "Upon successful pickup of the return product at your doorstep, Myntra will instantly initiate the refund to your source account or chosen method of refund. Instant Refunds is not available in a few select pin codes and for all self ship returns.",
   // sixth
   sixthTitle: "How do I apply a coupon on my order?",
-  sixthDescription: "You can apply a coupon on cart page before order placement. The complete list of your unused and valid coupons will be available under “My Coupons” tab of App/Website/M-site.",
-  // 
+  sixthDescription:
+    "You can apply a coupon on cart page before order placement. The complete list of your unused and valid coupons will be available under “My Coupons” tab of App/Website/M-site.",
+  //
   ifHaveQuestions: "If you have any other questions",
-  ifHaveQuestionsDesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-  stillHaveQ:"Still have questions?",
-  cantFindAns : "Can’t find the answer you’re looking for? Please chat to our friendly team.",
+  ifHaveQuestionsDesc:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+  stillHaveQ: "Still have questions?",
+  cantFindAns:
+    "Can’t find the answer you’re looking for? Please chat to our friendly team.",
   getInTouch: "Get in touch",
-
-
 
   // internal shipping page
 

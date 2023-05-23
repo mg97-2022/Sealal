@@ -3,6 +3,7 @@ import InputField from "./InputField";
 import { useForm } from "react-hook-form";
 import SelectInputField from "./SelectInputField";
 import Button from "./Button";
+import LangUtils from "@/utils/language";
 
 const HomeInternationalShipping = () => {
   const {
@@ -36,7 +37,7 @@ const HomeInternationalShipping = () => {
 
   return (
     <form className="flex flex-col" onSubmit={handleSubmit(onSubmit)}>
-      <HomeFormInputsContainer>
+      <HomeFormInputsContainer className="grid-cols-2">
         <SelectInputField
           register={register}
           name="shippingType"
@@ -50,7 +51,7 @@ const HomeInternationalShipping = () => {
           errorMessage={country?.message}
         ></SelectInputField>
       </HomeFormInputsContainer>
-      <HomeFormInputsContainer>
+      <HomeFormInputsContainer className="grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         <InputField
           register={register}
           type="number"
@@ -87,7 +88,7 @@ const HomeInternationalShipping = () => {
           errorMessage={number?.message}
         />
       </HomeFormInputsContainer>
-      <HomeFormInputsContainer className="border-none pt-2">
+      <HomeFormInputsContainer className="border-none pt-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <SelectInputField
           register={register}
           name="city"
@@ -122,9 +123,9 @@ const HomeInternationalShipping = () => {
         />
       </HomeFormInputsContainer>
       <span className="block first-letter:capitalize font-medium mt-3 pl-[14px]">
-        receiver info
+        {LangUtils.FetchWord("receiverInfo")}
       </span>
-      <HomeFormInputsContainer className="border-none pt-2">
+      <HomeFormInputsContainer className="border-none pt-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <InputField
           register={register}
           name="name"

@@ -2,6 +2,7 @@ import IntegratedPartners from "@/components/IntegratedPartners";
 import KeenToKnow from "@/components/KeenToKnow";
 import LetsWork from "@/components/LetsWork";
 import MainBannerWithText from "@/components/MainBannerWithText";
+import ServicesSeamlessIntegration from "@/components/ServicesSeamlessIntegration";
 
 const Services = () => {
   return (
@@ -23,6 +24,7 @@ const Services = () => {
       <LetsWork />
       <IntegratedPartners />
       <KeenToKnow />
+      <ServicesSeamlessIntegration />
     </main>
   );
 };

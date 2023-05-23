@@ -16,7 +16,7 @@ const SelectInputField = ({
 }) => {
   return (
     <div
-      className={`flex flex-col justify-between min-w-[110px] w-full ${containerClassName}`}
+      className={`flex flex-col justify-between w-full ${containerClassName}`}
     >
       <label
         className={`mb-3 first-letter:capitalize text-sm ${

@@ -47,7 +47,7 @@ const data = [
 
 const FAQCards = () => {
   return (
-    <div className="container grid grid-cols-1 sm:grid-cols-3 gap-5 mt-[135px] mb-[63px]">
+    <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-[135px] mb-[63px]">
       {data.map((item) => (
         <FAQCard key={item.id} {...item} />
       ))}

@@ -14,7 +14,7 @@ const FAQBanner = () => {
             width={800}
             height={411}
           />
-          <div className="text-center w-[450px] w-min-[450px]">
+          <div className="text-center w-[450px]">
             <h4 className="text-[35px] font-bold text-white leading-7 first-letter:capitalize">
               {LangUtils.FetchWord("askAnything")}
             </h4>
