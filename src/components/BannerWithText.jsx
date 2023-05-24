@@ -22,8 +22,10 @@ const BannerWithText = ({
     >
       <div
         className={`${
-          reverse && "flex-row-reverse"
-        } container flex items-center justify-between flex-col md:flex-row gap-10 md:gap-15 lg:gap-20`}
+          reverse
+            ? "flex-col-reverse md:flex-row-reverse"
+            : "flex-col md:flex-row"
+        } container flex items-center justify-between gap-10 md:gap-15 lg:gap-20`}
       >
         <div>
           <div className="max-w-[675px]">
