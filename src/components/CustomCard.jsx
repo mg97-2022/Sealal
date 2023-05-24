@@ -10,23 +10,25 @@ const CustomCard = ({
   description,
 }) => {
   return (
-    <div className="text-center">
-      <Image
-        className={`mx-auto mb-8 h-[${imgHeight}px]`}
-        src={imgSrc}
-        alt={title}
-        width={imgWidth}
-        height={imgHeight}
-      />
+    <div className="text-center max-w-[400px] mx-auto">
+      <div>
+        <Image
+          alt={title}
+          src={imgSrc}
+          width={imgWidth}
+          height={imgHeight}
+          className={`mx-auto mb-8 h-[${imgHeight}px]`}
+        />
+      </div>
       {step && (
-        <h4 className="text-secondary capitalize font-medium text-lg">
+        <h4 className="text-secondary capitalize font-medium lg:text-lg">
           {LangUtils.FetchWord(step)}
         </h4>
       )}
-      <h3 className="text-primary uppercase text-[22px] font-medium mt-4 mb-7">
+      <h3 className="text-primary uppercase md:text-lg lg:text-[22px] font-medium mt-4 mb-7">
         {LangUtils.FetchWord(title)}
       </h3>
-      <p className="text-greyDark text-lg">
+      <p className="text-greyDark text-sm md:text-base lg:text-lg">
         {LangUtils.FetchWord(description)}
       </p>
     </div>

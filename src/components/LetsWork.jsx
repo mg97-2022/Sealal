@@ -32,7 +32,7 @@ const LetsWork = () => {
   return (
     <section className="container pt-10 pb-14">
       <SectionHeader heading="workTogether" description="modularYet" />
-      <div className="flex items-center gap-8 pt-12">
+      <div className="flex flex-wrap gap-y-24 gap-x-8 pt-12">
         {letsWork.map((card) => (
           <CustomCard key={card.id} {...card} />
         ))}

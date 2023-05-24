@@ -28,7 +28,7 @@ const InputField = ({
         {!!errorMessage && <span>{LangUtils.FetchWord(errorMessage)}</span>}
       </label>
       <input
-        className={`bg-transparent rounded-2 rounded-[10px] border border-black outline-none h-10 px-2 text-xs placeholder:capitalize ${
+        className={`bg-transparent rounded-2 rounded-[10px] border border-black outline-none h-10 px-2 text-xs lg:text-sm placeholder:capitalize ${
           !!errorMessage
             ? "placeholder:text-red-500"
             : "placeholder:text-greyLightFourth"

@@ -7,11 +7,11 @@ const SectionHeader = ({
   headingClassName,
 }) => {
   return (
-    <div className="my-10 text-center">
+    <div className="my-6 md:my-10 text-center">
       <div className="flex items-center justify-center">
         {showSideLines && <span className="h-[1px] w-[150px] bg-primary" />}
         <h3
-          className={`px-11 text-[22px] text-primary font-medium leading-[36px] ${headingClassName}`}
+          className={`px-11 text-lg md:text-[22px] text-primary font-medium leading-[36px] ${headingClassName}`}
         >
           {LangUtils.FetchWord(heading)}
         </h3>

@@ -31,7 +31,8 @@ const CustomCarousel = ({
     autoplaySpeed: 3000, // delay between each slide move
     centerMode: false, // used to show the current slide in the center of the page
     className: `${carouselClassName}`, // container className
-    slidesToShow: slidesToShow || 3, // number of slides shown in screen
+    responsive: responsive,
+    slidesToShow: slidesToShow, // number of slides shown in screen
     slidesToScroll: 1, // number of slides to scroll at each time
     speed: 500, // Animation speed in milliseconds
     draggable: true, // Enable scrollable via dragging on desktop
@@ -47,7 +48,6 @@ const CustomCarousel = ({
     // variableWidth: true, // used to change the width and the gap between slides
     // lazyLoad: "progressive" || "ondemand", // Load images or render components on demand or progressively
     // rtl: false, // reverses the slides order
-    responsive: responsive,
   };
   return (
     <div className={`${containerClassName} container`}>

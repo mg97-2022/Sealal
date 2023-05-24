@@ -44,7 +44,7 @@ const PudoPoints = () => {
   return (
     <section className="container pt-10 pb-14">
       <SectionHeader heading="whatIsPudo" />
-      <div className="flex items-center gap-4 pt-12">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 pt-12">
         {pudoPoints.map((point) => (
           <CustomCard key={point.id} {...point} />
         ))}

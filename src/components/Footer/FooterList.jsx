@@ -4,7 +4,7 @@ import LangUtils from "@/utils/language";
 const FooterList = ({ title, list = [] }) => {
   return (
     <div>
-      <h5 className="text-lg font-bold leading-7 mb-5 first-letter:capitalize">
+      <h5 className="md:text-lg font-bold leading-7 mb-5 first-letter:capitalize">
         {LangUtils.FetchWord(title)}
       </h5>
       <ul>

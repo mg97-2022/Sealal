@@ -6,9 +6,9 @@ import img from "public/reviews.png";
 import ReviewsCard from "./ReviewsCard";
 import CustomCarousel from "./CustomCarousel";
 
-const carouselResponsive = [
+const responsive = [
   {
-    breakpoint: 1000,
+    breakpoint: 800,
     settings: {
       slidesToShow: 2,
     },
@@ -77,7 +77,7 @@ const CustomersReviews = ({ reviews }) => {
   return (
     <section className="container pt-[46px] pb-[66px]">
       <LeftHeading heading="whatClientsSay" description={description} />
-      <CustomCarousel responsive={carouselResponsive}>
+      <CustomCarousel slidesToShow={3} responsive={responsive}>
         {dummyData.map((review) => (
           <ReviewsCard
             key={review.id}

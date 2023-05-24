@@ -7,7 +7,7 @@ const CustomLink = ({ bgColor, link, className, children }) => {
       href={link}
       className={`${
         bgColor ? bgColor : "bg-primary"
-      } block px-[85px] py-3 w-fit mx-auto rounded-full text-white font-medium leading-[36px] whitespace-nowrap cursor-pointer ${className} `}
+      } block px-[40px] md:px-[60px] lg:px-[85px] py-1 md:py-2 lg:py-3  w-fit mx-auto rounded-full text-white font-medium text-sm md:text-base leading-[36px] whitespace-nowrap cursor-pointer ${className} `}
     >
       {LangUtils.FetchWord(children)}
     </Link>

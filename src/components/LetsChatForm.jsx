@@ -29,7 +29,7 @@ const LetsChatForm = () => {
         onSubmit={handleSubmit(submitHandler)}
         noValidate
       >
-        <div className="grid grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-2 gap-5 md:gap-8 mb-8">
           <InputField
             register={register}
             name="messagePurpose"
@@ -91,7 +91,7 @@ const LetsChatForm = () => {
           <div className="mt-6 pl-9">
             {["youCanUnsubscribe", "byClicking"].map((paragraph, index) => (
               <p
-                className={`text-greySemiDark first-letter:capitalize ${
+                className={`text-greySemiDark text-sm lg:text-base first-letter:capitalize ${
                   index === 0 && "mb-5"
                 }`}
                 key={paragraph}

@@ -9,8 +9,6 @@ const Services = () => {
     <main>
       <MainBannerWithText
         reverse="flex-row-reverse"
-        sectionHeight="h-[559px]"
-        contentTop="top-[120px]"
         heading="services"
         description="bePartOfGrowing"
         bannerSrc="/car_with_location.png"

@@ -6,7 +6,7 @@ import TelephoneIcon from "../icons/TelephoneIcon";
 const FooterGetInTouch = () => {
   return (
     <div>
-      <h5 className="text-lg font-bold leading-7 mb-5 first-letter:capitalize">
+      <h5 className="md:text-lg font-bold leading-7 mb-5 first-letter:capitalize">
         {LangUtils.FetchWord("getInTouch")}
       </h5>
       <ul>

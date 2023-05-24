@@ -2,6 +2,27 @@ import Image from "next/image";
 import CustomCarousel from "./CustomCarousel";
 import SectionHeader from "./SectionHeader";
 
+const responsive = [
+  {
+    breakpoint: 1000,
+    settings: {
+      slidesToShow: 8,
+    },
+  },
+  {
+    breakpoint: 800,
+    settings: {
+      slidesToShow: 6,
+    },
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 4,
+    },
+  },
+];
+
 const IntegratedPartners = () => {
   return (
     <section className="container pt-14 pb-32">
@@ -9,7 +30,11 @@ const IntegratedPartners = () => {
         heading="ourIntegrated"
         headingClassName="uppercase mb-5"
       />
-      <CustomCarousel slidesToShow={11} pagination={false}>
+      <CustomCarousel
+        slidesToShow={11}
+        pagination={false}
+        responsive={responsive}
+      >
         {[
           "/image 1.png",
           "/image 3.png",

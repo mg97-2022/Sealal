@@ -67,13 +67,17 @@ body {
 .active-orders-status.RECOVERY {
   left: 85%;
 }
+/* react-slick styles */
 .slick-dots {
   bottom: -45px !important;
 }
 .slick-dots ul {
   display: flex;
   justify-content: center;
-  gap: 6px;
+  column-gap: 6px;
+  flex-wrap: wrap;
+  /* next line is used to make dots not collapse*/
+  /* min-width: fit-content;  */
 }
 .slick-dots ul li {
   margin: 0;

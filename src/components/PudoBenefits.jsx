@@ -24,7 +24,7 @@ const PudoBenefits = () => {
   return (
     <section className="container pb-28 pt-12">
       <SectionHeader heading="pudoBenefits" />
-      <div className="flex gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {benefits.map((benefit) => (
           <PudoBenefitsCard key={benefit.id} {...benefit} />
         ))}

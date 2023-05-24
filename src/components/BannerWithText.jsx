@@ -23,31 +23,35 @@ const BannerWithText = ({
       <div
         className={`${
           reverse && "flex-row-reverse"
-        } container flex items-center justify-between gap-20`}
+        } container flex items-center justify-between flex-col md:flex-row gap-10 md:gap-15 lg:gap-20`}
       >
-        <div className="max-w-[675px]">
-          <h3
-            className={`${titleClassName} text-[22px] font-medium text-primary leading-[36px] uppercase mb-6`}
-          >
-            {LangUtils.FetchWord(title)}
-          </h3>
-          {LangUtils.FetchWord(descriptions).map((description) => (
-            <p
-              key={description}
-              className={`flex items-start mb-4 leading-[24px]`}
+        <div>
+          <div className="max-w-[675px]">
+            <h3
+              className={`${titleClassName} md:text-lg lg:text-[22px] font-medium text-primary leading-[36px] uppercase mb-4 md:mb-6`}
             >
-              {showDescriptionIcon && <ShareIcon className="min-w-max" />}
-              {description}
-            </p>
-          ))}
+              {LangUtils.FetchWord(title)}
+            </h3>
+            {LangUtils.FetchWord(descriptions).map((description) => (
+              <p
+                key={description}
+                className={`flex items-start mb-4 text-sm md:text-base leading-[24px]`}
+              >
+                {showDescriptionIcon && <ShareIcon className="min-w-max" />}
+                {description}
+              </p>
+            ))}
+          </div>
         </div>
-        <Image
-          className={`h-[${imgHeight}px]`}
-          src={imgSrc}
-          alt={LangUtils.FetchWord(title)}
-          width={imgWidth}
-          height={imgHeight}
-        />
+        <div className="min-w-[300px]">
+          <Image
+            className={`h-[${imgHeight}px]`}
+            src={imgSrc}
+            width={imgWidth}
+            height={imgHeight}
+            alt={LangUtils.FetchWord(title)}
+          />
+        </div>
       </div>
     </section>
   );

@@ -26,7 +26,7 @@ const contactUs = [
 
 const ContactUs = () => {
   return (
-    <section className="py-[86px] flex items-center justify-center gap-[60px]">
+    <section className="py-[86px] flex items-center flex-wrap justify-center gap-[60px]">
       {contactUs.map((card) => (
         <ContactCard key={card.id} {...card} />
       ))}

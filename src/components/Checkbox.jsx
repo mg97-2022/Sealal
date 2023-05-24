@@ -19,7 +19,7 @@ const Checkbox = ({
       />
       <label
         className={
-          "cursor-pointer first-letter:capitalize text-lg text-greyDark"
+          "cursor-pointer first-letter:capitalize lg:text-lg text-greyDark"
         }
         htmlFor={name}
       >

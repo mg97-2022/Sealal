@@ -39,7 +39,7 @@ const HomePageShipping = () => {
               title={"internalShipping"}
               description={"internalShippingDescription"}
               onClick={() => setShowInternalShippingForm(true)}
-              className="ml-44"
+              flexDirection="justify-center md:justify-end"
             />
           )}
         </div>
@@ -57,7 +57,7 @@ const HomePageShipping = () => {
               description={"internationalShippingDescription"}
               onClick={() => setShowInternationalShippingForm(true)}
               icon={<PlaneIcon />}
-              className="mr-44"
+              flexDirection="justify-center md:justify-start"
             />
           )}
         </div>
