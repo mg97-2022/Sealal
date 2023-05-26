@@ -16,13 +16,10 @@ const ShipmentStatuses = ({
     isShippingFirstStep || isShippingSecondStep || isShippingThirdStep;
   const secondStepActive = isShippingSecondStep || isShippingThirdStep;
 
-  console.log(isShipmentCompleted, "completed");
-  console.log(isShipmentFailed, "failed");
-
   return (
     <div className="flex gap-10 relative">
       <SingleShipmentStatus
-        icon={<BoxTickIcon />}
+        icon={<BoxTickIcon className="scale-75 md:scale-90 lg:scale-100" />}
         status="shipmentReceived"
         isActive={firstStepActive}
         isShipmentCompleted={isShipmentCompleted}
@@ -30,10 +27,10 @@ const ShipmentStatuses = ({
       <StatusesLineBetween
         isActive={secondStepActive}
         isShipmentCompleted={isShipmentCompleted}
-        left="left-[81px]"
+        left="left-[50px] md:left-[63px] lg:left-[81px]"
       />
       <SingleShipmentStatus
-        icon={<TruckFastIcon />}
+        icon={<TruckFastIcon className="scale-75 md:scale-90 lg:scale-100" />}
         status="onTheWay"
         isActive={secondStepActive}
         isShipmentCompleted={isShipmentCompleted}
@@ -41,19 +38,19 @@ const ShipmentStatuses = ({
       <StatusesLineBetween
         isActive={isShippingThirdStep}
         isShipmentCompleted={isShipmentCompleted}
-        left="left-[256px]"
+        left="left-[170px] md:left-[203px] lg:left-[256px]"
       />
       <SingleShipmentStatus
-        icon={<TruckTickIcon />}
+        icon={<TruckTickIcon className="scale-75 md:scale-90 lg:scale-100" />}
         status="delivered"
         isActive={isShippingThirdStep}
         isShipmentCompleted={isShipmentCompleted}
       />
       {!isShipmentCompleted && (
         <>
-          <StatusesLineBetween left="left-[431px]" />
+          <StatusesLineBetween left="left-[290px] md:left-[343px] lg:left-[431px]" />
           <SingleShipmentStatus
-            icon={<TruckRemoveIcon />}
+            icon={<TruckRemoveIcon className="scale-75 md:scale-90 lg:scale-100" />}
             status="unableToDeliver"
             isShipmentFailed={isShipmentFailed}
             unChecked

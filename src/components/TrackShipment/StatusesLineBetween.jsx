@@ -7,7 +7,7 @@ const StatusesLineBetween = ({ isActive, isShipmentCompleted, left }) => {
   }
   return (
     <span
-      className={`h-[2px] w-[148px] bg-${statusColor} absolute bottom-9 ${left}`}
+      className={`h-[2px] w-[100px] md:w-[114px] lg:w-[148px] bg-${statusColor} absolute bottom-12 lg:bottom-9 ${left}`}
     />
   );
 };

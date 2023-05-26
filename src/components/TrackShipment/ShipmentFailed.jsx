@@ -15,20 +15,20 @@ const ShipmentFailed = () => {
       {openModal && (
         <Modal onClose={closeModalHandler}>
           <div>
-            <h6 className="mb-[70px] text-center font-semibold first-letter:capitalize text-lg text-primary">
+            <h6 className="mb-10 md:mb-12 lg:mb-[70px] text-center font-semibold first-letter:capitalize lg:text-lg text-primary">
               {LangUtils.FetchWord("refundToSeller")}
             </h6>
-            <div className="flex gap-2">
+            <div className="flex items-center justify-center flex-wrap gap-2">
               <SquareButton
                 onClick={() => {}}
-                className="h-[60px] w-[302px]"
                 bgColor="bg-primary"
+                className="h-[45px] md:h-[50px] w-[280px] lg:h-[60px] md:w-[302px]"
               >
                 receiptInWarehouse
               </SquareButton>
               <SquareButton
                 onClick={openModalHandler}
-                className="h-[60px] w-[302px] border border-primary"
+                className="h-[45px] md:h-[50px] w-[280px] lg:h-[60px] md:w-[302px] border border-primary"
                 bgColor="transparent"
                 textColor="text-primary"
               >
@@ -42,17 +42,17 @@ const ShipmentFailed = () => {
         <p className="text-[#2E2E2E] text-sm mb-[66px] text-center">
           {LangUtils.FetchWord("unableReason")}
         </p>
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center flex-wrap gap-y-5 gap-x-2">
           <SquareButton
             onClick={() => {}}
-            className="h-[60px] w-[302px]"
+            className="h-[45px] md:h-[50px] w-[280px] lg:h-[60px] md:w-[302px]"
             bgColor="bg-primary"
           >
             redeliveryToSame
           </SquareButton>
           <SquareButton
             onClick={() => {}}
-            className="h-[60px] w-[302px] border border-primary"
+            className="h-[45px] md:h-[50px] w-[280px] lg:h-[60px] md:w-[302px] border border-primary"
             bgColor="transparent"
             textColor="text-primary"
           >
@@ -60,7 +60,7 @@ const ShipmentFailed = () => {
           </SquareButton>
           <SquareButton
             onClick={openModalHandler}
-            className="h-[60px] w-[302px] border border-primary"
+            className="h-[45px] md:h-[50px] w-[280px] lg:h-[60px] md:w-[302px] border border-primary"
             bgColor="transparent"
             textColor="text-primary"
           >

@@ -33,7 +33,7 @@ const InternationalShippingForm = () => {
   };
 
   return (
-    <section className="pt-8 pb-16 mb-[500px] bg-[#F9F9F9]">
+    <section className="pt-8 pb-16 mb-[100px] md:mb-[200px] lg:mb-[300px] bg-[#F9F9F9]">
       <form className="container" onSubmit={handleSubmit(onSubmit)}>
         <ShippingPagesHeading heading="internationalShipping" />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-9">

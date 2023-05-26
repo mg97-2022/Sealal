@@ -3,7 +3,7 @@ import ShipmentDetails from "@/components/TrackShipment/ShipmentDetails";
 import ShipmentFailed from "@/components/TrackShipment/ShipmentFailed";
 import ShipmentStatuses from "@/components/TrackShipment/ShipmentStatuses";
 
-const dummyShipmentStatus = "unable";
+const dummyShipmentStatus = "completed";
 
 const TrackShipment = () => {
   const isShippingFirstStep = dummyShipmentStatus === "received";
@@ -25,7 +25,7 @@ const TrackShipment = () => {
 
   return (
     <main className="h-[80vh] flex items-center justify-center">
-      <div className="flex flex-col items-center gap-[76px]">
+      <div className="container pt-[100px] flex flex-col items-center gap-[76px]">
         <ShipmentStatuses
           isShippingFirstStep={isShippingFirstStep}
           isShippingSecondStep={isShippingSecondStep}

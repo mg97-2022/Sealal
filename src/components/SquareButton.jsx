@@ -10,7 +10,7 @@ const SquareButton = ({
 }) => {
   return (
     <button
-      className={`${className} first-letter:capitalize rounded-[10px] font-medium py-2  whitespace-nowrap ${
+      className={`${className} min-w-[250px] first-letter:capitalize rounded-[10px] text-sm md:text-base font-medium py-2 whitespace-nowrap ${
         textColor ? textColor : "text-white"
       } ${bgColor ? bgColor : "bg-primaryLight"}`}
       type={type || "button"}
