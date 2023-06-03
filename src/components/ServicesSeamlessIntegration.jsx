@@ -5,7 +5,7 @@ const ServicesSeamlessIntegration = () => {
   return (
     <section className="container relative mb-[156px]">
       <Image
-        className="absolute top-0 left-[50%] translate-x-[-50%]"
+        className="absolute top-0 left-[50%] translate-x-[-50%] hidden xl:block"
         src="/seamlessIntegration.png"
         alt="banner"
         width={472}
@@ -18,8 +18,7 @@ const ServicesSeamlessIntegration = () => {
         imgWidth={223}
         imgHeight={136}
         containerClassName="justify-end pt-[100px]"
-        contentClassName="gap-32"
-        textClassName="w-[530px]"
+        textClassName="xl:w-[530px]"
       />
       <SeamlessIntegration
         title="seamlessIntegrationFirst"
@@ -28,8 +27,8 @@ const ServicesSeamlessIntegration = () => {
         imgWidth={157}
         imgHeight={145}
         containerClassName="pt-[90px]"
-        contentClassName="flex-row-reverse  gap-32"
-        textClassName="w-[380px]"
+        contentClassName="!flex-row-reverse"
+        textClassName="xl:w-[380px]"
       />
       <SeamlessIntegration
         title="seamlessIntegrationFirst"
@@ -38,8 +37,7 @@ const ServicesSeamlessIntegration = () => {
         imgWidth={228}
         imgHeight={152}
         containerClassName="justify-end pt-[50px]"
-        contentClassName="gap-32"
-        textClassName="w-[380px]"
+        textClassName="xl:w-[380px]"
       />
     </section>
   );

@@ -163,8 +163,8 @@ export const en = {
   hour: "hour",
   from: "from",
   to: "to",
-  "9am" :"9 am",
-  "5pm" :"5 pm",
+  "9am": "9 am",
+  "5pm": "5 pm",
   payment: "payment",
   cost: "cost",
   cash: "cash",
@@ -192,21 +192,26 @@ export const en = {
   keenToKnow: "keen to know more?",
   aBetterWay: "a better way to grow a single click",
   seamlessIntegrationFirst: "SEAMLESS INTEGRATION WITH OUR E-COMMERCE PARTNERS",
-  seamlessIntegrationFirstDesc:
+  seamlessIntegrationFirstDesc: [
     "Whether you’ve set up shop on Shopify, Shopcada, WooCommerce, or anywhere else, we make it incredibly easy for you to ship your parcels through our strong integrations with leading platforms. We’re also an official courier delivery partner of major marketplaces such as Lazada and Shopee.",
+  ],
   seamlessIntegrationSecond:
     "SEAMLESS INTEGRATION WITH OUR E-COMMERCE PARTNERS",
-  seamlessIntegrationSecondDesc:
+  seamlessIntegrationSecondDesc: [
     "Whether you’ve set up shop on Shopify, Shopcada, WooCommerce, or anywhere else, we make it incredibly easy for you to ship your parcels through our strong integrations with leading platforms. We’re also an official courier delivery partner of major marketplaces such as Lazada and Shopee.",
+  ],
   seamlessIntegrationThird: "SEAMLESS INTEGRATION WITH OUR E-COMMERCE PARTNERS",
-  seamlessIntegrationThirdDesc:
+  seamlessIntegrationThirdDesc: [
     "Whether you’ve set up shop on Shopify, Shopcada, WooCommerce, or anywhere else, we make it incredibly easy for you to ship your parcels through our strong integrations with leading platforms. We’re also an official courier delivery partner of major marketplaces such as Lazada and Shopee.",
+  ],
 
   // contact us page
   phoneNumber: "phone number",
   emailAddress: "e-mail address",
   lorem: "Lorem Ipsum is simply dummy text of the printing",
   // profile page
+  terms: "terms",
+  help: "help",
   hello: "Hello",
   profileInfo: "profile info",
   financialSettlement: "financial settlement",
@@ -239,13 +244,18 @@ export const en = {
   details: "details",
   orderStatus: "order status",
   sendCode: "send code",
-  sendVerificationCode: "send verification code",
+  resendOtp: "resend OTP",
+  sendVerificationCode: "send code",
   // code verification section
   codeVerification: "code verification",
+  validationCode: "validation code",
   enterOTP: "Enter OTP sent to you",
   verifyCode: "verify code",
   resendCode: "resend code",
+  didnotReceive: "didn't receive ?",
+  in5: "in 00:05",
   // track shipment
+  trackShipping: "track shipping",
   shipmentReceived: "shipment received",
   onTheWay: "on the way",
   delivered: "delivered",
@@ -265,7 +275,7 @@ export const en = {
   // FAQ page
   askAnything: "ask us anything",
   faq: "faq",
-  searchFor: "Search For any qestion",
+  searchFor: "Search For any question",
   // grid boxes
   // first
   firstTitle: "How do I change my account email?",
@@ -323,7 +333,6 @@ export const en = {
   service_provider: "service provider",
   customer: "customer",
   company: "company",
-  terms: "I agree with Terms and Conditions",
 
   company_id: "company id",
   location: "Location",

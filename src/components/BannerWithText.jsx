@@ -39,7 +39,7 @@ const BannerWithText = ({
                 key={description}
                 className={`flex items-start mb-4 text-sm md:text-base leading-[24px]`}
               >
-                {showDescriptionIcon && <ShareIcon className="min-w-max" />}
+                {showDescriptionIcon && <ShareIcon className="min-w-fit" />}
                 {description}
               </p>
             ))}

@@ -18,7 +18,7 @@ const FAQGetInTouch = () => {
           bgColor="bg-secondary"
           onClick={() => {}}
         >
-          getInTouch
+          {LangUtils.FetchWord("getInTouch")}
         </SquareButton>
       </div>
     </div>

@@ -20,28 +20,30 @@ const ProfileFinancialSettlement = () => {
       <ProfilePageHeader heading="financialSettlement" />
       <div className="bg-[#F7F7F7] px-[18px] pt-[15px] pb-[35px]">
         <form
-          className="flex items-end gap-2 mt-4"
+          className="flex flex-col lg:flex-row items-end gap-5 lg:gap-2 mt-4"
           onSubmit={handleSubmit(submitHandler)}
         >
-          <InputField
-            register={register}
-            name="amountsDue"
-            label="amountsDue"
-            errorMessage={errors.amountsDue?.message}
-            inputClassName="bg-white border-greyLightFifth h-[60px] pl-[18px]"
-            labelClassName="text-black"
-            placeholder="100$"
-          />
-          <InputField
-            register={register}
-            name="myBalance"
-            label="myBalance"
-            errorMessage={errors.myBalance?.message}
-            inputClassName="bg-white border-greyLightFifth h-[60px] pl-[18px]"
-            labelClassName="text-black"
-            placeholder="125$"
-          />
-          <SquareButton type="submit" className="h-[60px] px-10">
+          <div className="flex w-full gap-2">
+            <InputField
+              register={register}
+              name="amountsDue"
+              label="amountsDue"
+              errorMessage={errors.amountsDue?.message}
+              inputClassName="bg-white border-greyLightFifth h-[60px] pl-[18px]"
+              labelClassName="text-black"
+              placeholder="100$"
+            />
+            <InputField
+              register={register}
+              name="myBalance"
+              label="myBalance"
+              errorMessage={errors.myBalance?.message}
+              inputClassName="bg-white border-greyLightFifth h-[60px] pl-[18px]"
+              labelClassName="text-black"
+              placeholder="125$"
+            />
+          </div>
+          <SquareButton type="submit" className="h-[60px]">
             requestAmount
           </SquareButton>
         </form>

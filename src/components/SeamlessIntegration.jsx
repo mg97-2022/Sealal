@@ -1,5 +1,6 @@
 import Image from "next/image";
 import LangUtils from "@/utils/language";
+import { useEffect } from "react";
 
 const SeamlessIntegration = ({
   title,
@@ -13,8 +14,10 @@ const SeamlessIntegration = ({
 }) => {
   return (
     <div className={`${containerClassName} flex`}>
-      <div className={`${contentClassName} flex items-center`}>
-        <div>
+      <div
+        className={`${contentClassName} gap-10 sm:gap-20 xl:gap-32 flex items-center`}
+      >
+        <div className="min-w-[220px]">
           <Image
             className={`h-[${imgHeight}px]`}
             src={imgSrc}

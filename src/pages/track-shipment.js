@@ -3,7 +3,7 @@ import ShipmentDetails from "@/components/TrackShipment/ShipmentDetails";
 import ShipmentFailed from "@/components/TrackShipment/ShipmentFailed";
 import ShipmentStatuses from "@/components/TrackShipment/ShipmentStatuses";
 
-const dummyShipmentStatus = "completed";
+const dummyShipmentStatus = "received";
 
 const TrackShipment = () => {
   const isShippingFirstStep = dummyShipmentStatus === "received";

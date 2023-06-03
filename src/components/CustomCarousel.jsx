@@ -45,6 +45,7 @@ const CustomCarousel = ({
     pauseOnHover: true, // Prevents autoplay while hovering
     rows: 1, // number of rows per slide in the slider, (enables grid mode)
     slidesPerRow: 1, // number of slides to display in grid mode, this is useful with rows option
+    swipeToSlide: true, // move more than one slide at a time
     // variableWidth: true, // used to change the width and the gap between slides
     // lazyLoad: "progressive" || "ondemand", // Load images or render components on demand or progressively
     // rtl: false, // reverses the slides order

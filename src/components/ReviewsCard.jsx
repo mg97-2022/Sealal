@@ -14,9 +14,9 @@ const ReviewsCard = ({ img, rating, name, review }) => {
 
   return (
     <div className="py-5 pl-5 pr-3 bg-greyLightFirst rounded-lg w-[250px] lg:w-[300px] xl:w-[390px] min-h-[245px] mx-auto">
-      <div className="flex gap-2 items-center mb-4">
+      <div className="flex gap-2 min-w-[72px] min-h-[72px] items-center mb-4">
         <Image
-          className="rounded-full w-[50px] lg:w-[60px] xl:w-[72px] h-[72px]"
+          className="rounded-full"
           src={img}
           alt={name}
           width={72}
