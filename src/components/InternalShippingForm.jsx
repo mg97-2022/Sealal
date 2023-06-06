@@ -7,7 +7,6 @@ import ShippingPagesHeading from "./ShippingPagesHeading";
 import { useForm } from "react-hook-form";
 import CustomRadio from "./CustomRadio";
 import DatePicker from "./DatePicker";
-import { setDate } from "date-fns";
 import { useState } from "react";
 
 const GENDER_LIST = ["man", "female"];
@@ -16,9 +15,9 @@ const PAYMENT = ["cash", "done"];
 const COST = ["buyer", "seller"];
 
 const InternalShippingForm = () => {
-  const [date, selectedDate] = useState("");
+  const [date, setDate] = useState("");
 
-  const dateChangeHandler = (pickedDate) => setDate(selectedDate);
+  const dateChangeHandler = (selectedDate) => setDate(selectedDate);
 
   const {
     register,
@@ -223,7 +222,7 @@ const InternalShippingForm = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <DatePicker onChangeDate={dateChangeHandler} />
+            <DatePicker date={date} onChangeDate={dateChangeHandler} />
           </div>
           <div className="flex flex-col items-center justify-center gap-3 mt-5">
             <Checkbox
