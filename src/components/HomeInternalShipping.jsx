@@ -182,59 +182,64 @@ const HomeInternalShipping = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 py-5 px-[14px]">
-        <div className="mb-5">
-          <h5 className="block first-letter:capitalize font-medium mb-3">
-            {LangUtils.FetchWord("timeToDelivery")}
-          </h5>
-          <div className="flex justify-center mt-6">
-            <DatePicker />
-          </div>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <div>
+      <div className="flex flex-wrap pt-5 px-[14px]">
+        <h5 className="block first-letter:capitalize font-medium mb-3">
+          {LangUtils.FetchWord("timeToDelivery")}
+        </h5>
+        <div className="flex sm:flex-nowrap md:flex-wrap lg:flex-nowrap gap-5 md:gap-0 lg:gap-[34px]">
+          <div className="w-full">
             <h5 className="block first-letter:capitalize font-medium mb-3">
-              {LangUtils.FetchWord("hour")}
+              {LangUtils.FetchWord("date")}
             </h5>
-            <div className="grid grid-cols-2 gap-2">
-              <InputField
-                register={register}
-                name="hourFrom"
-                label="from"
-                placeholder="9am"
-                errorMessage={otherPhone?.message}
-              />
-              <InputField
-                register={register}
-                name="hourTo"
-                label="to"
-                placeholder="5pm"
-                errorMessage={otherPhone?.message}
-              />
+            <div className="flex justify-center">
+              <DatePicker />
             </div>
           </div>
-          <div className="mt-4">
-            <div className="mb-5">
+          <div className="flex flex-col w-full min-w-[180px] gap-4">
+            <div className="pb-[30px] w-full border-b border-b-greyDarkSecondary">
               <h5 className="block first-letter:capitalize font-medium mb-3">
-                {LangUtils.FetchWord("payment")}
+                {LangUtils.FetchWord("hour")}
               </h5>
-              <CustomRadio
-                name="payment"
-                defaultValue="cash"
-                register={register}
-                radioInputsList={PAYMENT}
-              />
+              <div className="grid grid-cols-2 gap-2">
+                <InputField
+                  register={register}
+                  name="hourFrom"
+                  label="from"
+                  placeholder="9am"
+                  errorMessage={otherPhone?.message}
+                />
+                <InputField
+                  register={register}
+                  name="hourTo"
+                  label="to"
+                  placeholder="5pm"
+                  errorMessage={otherPhone?.message}
+                />
+              </div>
             </div>
-            <div>
-              <h5 className="block first-letter:capitalize font-medium mb-3">
-                {LangUtils.FetchWord("cost")}
-              </h5>
-              <CustomRadio
-                name="cost"
-                defaultValue="buyer"
-                register={register}
-                radioInputsList={COST}
-              />
+            <div className="mt-4">
+              <div className="mb-5">
+                <h5 className="block first-letter:capitalize font-medium mb-3">
+                  {LangUtils.FetchWord("payment")}
+                </h5>
+                <CustomRadio
+                  name="payment"
+                  defaultValue="cash"
+                  register={register}
+                  radioInputsList={PAYMENT}
+                />
+              </div>
+              <div>
+                <h5 className="block first-letter:capitalize font-medium mb-3">
+                  {LangUtils.FetchWord("cost")}
+                </h5>
+                <CustomRadio
+                  name="cost"
+                  defaultValue="buyer"
+                  register={register}
+                  radioInputsList={COST}
+                />
+              </div>
             </div>
           </div>
         </div>
